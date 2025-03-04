@@ -8,17 +8,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/facebook?f=classic&s=brands">
+    <script src="https://kit.fontawesome.com/83b00f3480.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>                
-                <li><a href="index.html">Rainy Days</a></li>
+                <li><a href="index.html"><img src="Logo/Untitled_design__1_-removebg-preview.png" alt="Rainy days logo" class="logo_image"/></a></li>
                 <li><a href="all-jackets.html">Women</a></li>
                 <li><a href="all-jackets.html">Men</a></li>
                 <li><a href="all-jackets.html">All jackets</a></li>
                 <li><a href="about-us.html">About us</a></li>
                 <li><a href="contact-us.html">Contact us</a></li>
+                <li><i class="fa-solid fa-user-large"></i></li>
+                <li><i class="fa-solid fa-heart"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
             </ul>
         </nav>
     </header>
@@ -27,19 +32,19 @@
             <h1>Pushing the comfort zone</h1>
             <a href="all-jackets.html" class="cta-button">Shop now</a>
         </section>
-        <section>
+        <section class="categories">
             <h2>Explore categories</h2>
-            <div>
-                <img src="#" alt="Man in red winter jacket" />
-                <a href="all-jackets.html">Winter</a>
+            <div class="ctg">
+                <img src="Images/Man-red-winter-jacket.jpg" alt="Man in red winter jacket"/>
+                <a href="all-jackets.html" class="button">Winter</a>
             </div>
-            <div>
-                <img src="#" alt="Man in balck waterproof jacket" />
-                <a href="all-jackets.html">Waterproof</a>
+            <div class="ctg">
+                <img src="Images/Man-black-waterproof-jacket.jpg" alt="Man in balck waterproof jacket"/>
+                <a href="all-jackets.html" class="button">Waterproof</a>
             </div>
-            <div>
-                <img src="#" alt="Man in red windproof jacket" />
-                <a href="all-jackets.html">Windproof</a>
+            <div class="ctg">
+                <img src="Images/Man-red-windproof-jacket.jpg" alt="Man in red windproof jacket"/>
+                <a href="all-jackets.html" class="button">Windproof</a>
             </div>
         </section>
         <section>
@@ -49,20 +54,18 @@
         </section>
         <section>
             <h2>Our jackets</h2>
-            <div>
-                <img src="#" alt="Woman in blue windproof jacket" />
-                <h2>Women</h2>
-                <a href="all-jackets.html">Shop now</a>
+            <div class="ctg-shop">
+                <img src="Images/Women-blue-windproof-jacket.jpg" alt="Woman in blue windproof jacket" />
+                <a href="all-jackets.html" class="button">Women</a>
             </div>
-            <div>
-                <img src="#" alt="Man in black waterproof jacket" />
-                <h2>Men</h2>
-                <a href="all-jackets.html">Shop now</a>
+            <div class="ctg-shop">
+                <img src="Images/Man-black-windproof-jacket.jpg" alt="Man in black waterproof jacket" />
+                <a href="all-jackets.html" class="button">Men</a>
             </div>
         </section>
-        <section  class="sign-up">
-            <img src="Images/Camping tour (1).jpg" alt="People on a camping tour"/>
-            <div>
+        <section class="sign-up">
+            <img src="Images/Camping-tour.jpg" alt="People on a camping tour"/ class="sign-up_image">
+            <div class="sign-up-form">
                 <h2>Newsletter signup</h2>
                 <p>Stay informed about the latest product news and recive updates from our global network of athletes and partners</p>
                 <form action="form-success.html" method="POST"">
@@ -73,28 +76,30 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <ul>
-                <li><a href="index.html">Rainy Days</a></li>
-                <li>
-                    About us
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="index.html"><img src="Logo/Untitled_design__1_-removebg-preview.png" alt="Rainy days logo" class="logo_image"/></a>
+                </div>
+                <div class="footer-col">
+                    <p>About us </p>
                     <ul>
                         <li><a href="about-us.html">About us</a></li>
                         <li><a href="career.html">Career</a></li>
                     </ul>
-                </li>
-                <li>
-                    Menu
+                </div>
+                <div class="footer-col">
+                    <p>Menu</p>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="all-jackets.html">Women</a></li>
                         <li><a href="all-jackets.html">Men</a></li>
                         <li><a href="all-jackets.html">All jackets</a></li>
                     </ul>
-                </li>
-                <li>
-                    Information
+                </div>
+                <div class="footer-col">
+                    <p>Information</p>
                     <ul>
                         <li><a href="contact-us.html">Contact us</a></li>
                         <li><a href="oredrs.html">Orders</a></li>
@@ -103,13 +108,26 @@
                         <li><a href="returns.html">Delivery</a></li>
                         <li><a href="size-guide.html">Size guide</a></li>
                     </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="underline">
-            <ul>
-                <li>&copy; RainyDays</li>
-            </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="footer-under">
+            <nav>
+                <ul>
+                    <li>&copy; RainyDays</li>
+                    <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-paypal"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-pay"></i></a></li>
+                </ul>    
+            </nav>
         </section>
     </footer>
 </body>

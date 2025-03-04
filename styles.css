@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
-html, body{
+body{
     margin: 0;
     padding: 0;
-}
-
-body{
     font-family: "Hind Madurai", serif, monospace;
     font-weight: 400;
     font-size: 1.25rem;
@@ -24,19 +21,19 @@ h1{
 h2{
     font-family: 'Montserrat', sans-serif, serif, monospace;
     font-weight: 800;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     color: #245654;
 }
 h3{
     font-family: 'Montserrat', sans-serif, serif, monospace;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.5rem;
     color: #1F3D47;
 }
 header{
     text-align: left;
+    background-color:#245654;
 }
-
 header a{
     font-family: 'Montserrat', sans-serif, serif, monospace;
     font-weight: 400;
@@ -45,10 +42,6 @@ header a{
     text-decoration: none;
     padding: 45px;
     color: #FFF;
-}
-header{
-
-    background-color:#245654;
 }
 nav li{
     display: inline-block;
@@ -60,28 +53,38 @@ nav a:hover {
 nav ul {
     padding: 0px;
 }
-
-.hero-home{
-    background-image: url('Images/Hiking-in-the-Rain-Quotes.jpg');
-    min-height: 1024px
+img{
+  border-radius: 20px;  
 }
-.hero-home h1{
-    text-align: center;
-}
-.sign-up img{
-    max-width: 300px;
+.logo_image{
+    border-radius: 0px;
     float: left;
-    margin-right: 15px;
+    max-width: 130px;
+    max-height: 76px;
+}
+.fa-solid{
+    color: #FFF;
 }
 .cta-button{
     background-color: #F14B4B;
     color: #FFF;
     text-decoration: none;
 }
+.sign-up_image{
+    max-width: 720px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 0px;
+}
+.sign-up-form{
+    background-color: #F6EFD7;
+}
 footer{
     background-color: #245654;
     font-weight: 600;
     color: #FFF;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 footer a{
     font-weight: 400;
@@ -92,6 +95,89 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
-.underline{
+footer ul{
+    list-style: none;
+}
+.footer-col{
+    padding-top: 64px;
+}
+.footer-under{
     font-weight: 400;
+}
+
+/* Home page */
+.hero-home{
+    background-image: url('Images/Hiking-in-the-Rain-Quotes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    min-height: 110vh
+}
+.hero-home h1{
+    text-align: center;
+}
+
+/* All jackets page */
+.hero-shop {
+    background-image: url('Images/Men-ski.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    min-height: 70vh
+}
+
+/* Check in page */
+input{
+    display: block;
+    border: 1px solid #1F3D47;
+}
+.cta-pay{
+    font-family: "Hind Madurai", serif, monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: normal;
+    background-color: #F14B4B;
+    color: #FFF;
+    text-decoration: none;
+    border: 0px;
+}
+.ctg{
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    justify-content: center;
+}
+.ctg img{
+    width: 100%;
+    height: auto;
+}
+.ctg .button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    text-decoration: none;
+    color: #1F3D47;
+}
+.ctg-shop{
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    justify-content: center;
+}
+.ctg-shop img{
+    width: 100%;
+    height: auto;
+}
+.ctg-shop .button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    text-decoration: none;
+    color: #1F3D47;
 }

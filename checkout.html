@@ -23,6 +23,56 @@
         </nav>
     </header>
     <main>
+        <section>
+            <form action="order-confirmation.html" method="post">
+                <fieldset>
+                    <legend>Contact info</legend>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form__input" required>
+                    <label for="name">First name</label>
+                    <input type="text" id="name" class="form__input" required>
+                    <label for="lastname">Last name</label>
+                    <input type="text" id="lastname" class="form__input" required>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" class="form__input" required>
+                    <label for="city">City</label>
+                    <input type="text" id="city" class="form__input" required>
+                    <label for="postcode">Post code</label>
+                    <input type="text" id="postcode" class="form__input" required>
+                    <label for="country">Land</label>
+                    <input type="text" id="country" class="form__input" required>
+                    <label for="phone">Mobile phone</label>
+                    <input type="tel" id="phone" class="form__input" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Shipping</legend>
+                    <label for="delivery">Posten delivery home</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment</legend>
+                    <a href="#">Do you have a promotional code?</a>
+                    <input type="radio" id="card" name="payment" value="card" class="form__input">
+                    <label for="card">Credit/Debit Card</label>
+                    <input type="radio" id="paypal" name="payment" value="paypal" class="form__input">
+                    <label for="paypal">PayPal</label>
+                    <input type="radio" id="google-pay" name="payment" value="google-pay" class="form__input">
+                    <label for="google-pay">Google Pay</label>
+                </fieldset>
+                <input type="submit" value="Pay order" class="cta-pay"/>
+            </form>
+        </section>
+        <section class="sign-up">
+            <img src="Images/Camping-tour.jpg" alt="People on a camping tour"/ class="sign-up_image">
+            <div class="sign-up-form">
+                <h2>Newsletter signup</h2>
+                <p>Stay informed about the latest product news and recive updates from our global network of athletes and partners</p>
+                <form action="form-success.html" method="post">
+                    <label for="name">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <a href="form-success.html" class="cta-button">Sign up</a>
+                  </form>
+            </div>
+        </section>
 
     </main>
 </body>
