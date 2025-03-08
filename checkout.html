@@ -24,7 +24,10 @@
     </header>
     <main>
         <section>
-            <form action="order-confirmation.html" method="post">
+            <div class="nav-page">
+                <a href="all-jackets.html" class="active">Keep shopping</a>
+            </div>
+            <form action="order-confirmation.html" method="post" class="payment">
                 <fieldset>
                     <legend>Contact info</legend>
                     <label for="email">Email</label>
@@ -50,7 +53,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Payment</legend>
-                    <a href="#">Do you have a promotional code?</a>
+                    <a href="#" class="active">Do you have a promotional code?</a>
                     <input type="radio" id="card" name="payment" value="card" class="form__input">
                     <label for="card">Credit/Debit Card</label>
                     <input type="radio" id="paypal" name="payment" value="paypal" class="form__input">

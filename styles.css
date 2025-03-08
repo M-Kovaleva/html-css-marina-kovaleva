@@ -9,7 +9,7 @@ body{
     font-size: 1.25rem;
     font-style: normal;
     color: #1F3D47;
-    line-height: 1.7rem;
+    line-height: 1.6;
     text-align: left;
 }
 h1{
@@ -17,12 +17,15 @@ h1{
     font-weight: 800;
     font-size: 3rem;
     color: #245654;
+    line-height: 1.1;
+    text-align: center;
 }
 h2{
     font-family: 'Montserrat', sans-serif, serif, monospace;
-    font-weight: 800;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 2.25rem;
     color: #245654;
+    margin: 0;
 }
 h3{
     font-family: 'Montserrat', sans-serif, serif, monospace;
@@ -30,37 +33,19 @@ h3{
     font-size: 1.5rem;
     color: #1F3D47;
 }
-header{
-    text-align: left;
-    background-color:#245654;
-}
-header a{
-    font-family: 'Montserrat', sans-serif, serif, monospace;
-    font-weight: 400;
-    font-size: 1.25rem;
-    font-style: normal;
+a{
     text-decoration: none;
-    padding: 45px;
-    color: #FFF;
-}
-nav li{
-    display: inline-block;
-}
-nav a:hover {
-    text-decoration: underline;
-
-}
-nav ul {
-    padding: 0px;
+    color: #1F3D47;
 }
 img{
-  border-radius: 20px;  
+    border-radius: 1.25rem;  
 }
 .logo_image{
-    border-radius: 0px;
+    border-radius: 0;
     float: left;
-    max-width: 130px;
-    max-height: 76px;
+    max-width: 10vW;
+    max-height: 10vh;
+    padding: 0.3rem;
 }
 .fa-solid{
     color: #FFF;
@@ -69,16 +54,120 @@ img{
     background-color: #F14B4B;
     color: #FFF;
     text-decoration: none;
+    border-radius: 1.25rem;
+    padding: 0.75rem 4.25rem;
 }
-.sign-up_image{
-    max-width: 720px;
+
+/* Navigation on page */
+.nav-page a{
+    font-family: "Hind Madurai", serif, monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: normal;
+    color: #1F3D47;
+}
+.nav-page a:hover {
+    text-decoration: none;
+}
+.nav-page li{
+    padding: 0;
+}
+.nav-page .active{
+    text-decoration: underline;
+}
+.payment .active{
+    text-decoration: underline;
+}
+
+  /* Header */
+header{
+    display: flex;
+    align-items:center;
+    background-color:#245654;
+}
+header a{
+    font-family: 'Montserrat', sans-serif, serif, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+    margin-right: 1.6rem;
+}
+nav{
+    margin-left: 2.8rem;
+}
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+nav li{
+    display: inline-block;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.search-input{
+    height: 36px;
+    width: 200px;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    background: none;
+    outline: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    font-size: 1rem;
     float: left;
-    margin-right: 15px;
+    line-height: 40px;
+}
+.search-box ::placeholder{
+    color: #FFF;
+    font-weight: 200;
+}
+
+/* Separator */
+.separator{
+    position: relative;
+    background-image: url('Images/Man-bicycle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:center;
+    min-height: 45vh
+}
+.separator-content{
+    position: absolute;
+    left: 3.5rem;
+    margin-top: 2.4rem;
+}
+.separator h2{
+    color: #FFF;
+    margin-bottom: 0.3rem;
+    margin-top: 0rem;
+}
+.separator p{
+    color: #FFF;
+    margin-top: 0rem;
+    margin-bottom: 1.8rem;
+}
+.separator .cta-button{
+    margin-top: 0rem;
+}
+/* Sign up */
+.sign-up{
+    display: flex;
+}
+.sign-up>*{
+    flex: 1;
+}
+.sign-up-image{
     border-radius: 0px;
+    width: 50vw;
 }
 .sign-up-form{
     background-color: #F6EFD7;
 }
+
+/* Footer */
 footer{
     background-color: #245654;
     font-weight: 600;
@@ -98,6 +187,7 @@ footer a:hover{
 footer ul{
     list-style: none;
 }
+
 .footer-col{
     padding-top: 64px;
 }
@@ -107,6 +197,11 @@ footer ul{
 
 /* Home page */
 .hero-home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url('Images/Hiking-in-the-Rain-Quotes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,39 +209,28 @@ footer ul{
     background-position-y: bottom;
     min-height: 110vh
 }
+.hero-home-item{
+    margin: 2.4rem;
+}
 .hero-home h1{
-    text-align: center;
-}
-
-/* All jackets page */
-.hero-shop {
-    background-image: url('Images/Men-ski.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: top;
-    min-height: 70vh
-}
-
-/* Check in page */
-input{
-    display: block;
-    border: 1px solid #1F3D47;
-}
-.cta-pay{
-    font-family: "Hind Madurai", serif, monospace;
-    font-weight: 400;
-    font-size: 1.25rem;
-    font-style: normal;
-    background-color: #F14B4B;
     color: #FFF;
-    text-decoration: none;
-    border: 0px;
+    margin: 0px;
+}
+.section-name{
+    margin-top: 5.2rem;
+    margin-left: 3.5rem;
+}
+.categories{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;;
 }
 .ctg{
+    flex: 1;
     position: relative;
+    margin: 1.2rem 1rem 6rem  3.5rem;
     width: 100%;
-    max-width: 420px;
+    max-width: 21rem;
     justify-content: center;
 }
 .ctg img{
@@ -159,11 +243,21 @@ input{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFF;
+    opacity: 73%;
     text-decoration: none;
     color: #1F3D47;
+    border-radius: 20px;
+    padding: 12px
+}
+.categories-shop{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;;
 }
 .ctg-shop{
+    flex: 1;
     position: relative;
+    margin: 1.2rem 1rem 6rem  3.5rem;
     width: 100%;
     max-width: 640px;
     justify-content: center;
@@ -178,6 +272,52 @@ input{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFF;
+    opacity: 73%;
+    text-decoration: none;
+    color: #1F3D47;
+    border-radius: 20px;
+    padding: 12px
+}
+.ctg-shop .button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
     text-decoration: none;
     color: #1F3D47;
 }
+
+/* All jackets page */
+.hero-shop {
+    background-image: url('Images/Men-ski.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    min-height: 70vh
+}
+.hero-shop h1{
+    color: #FFF;
+    text-align: center;
+    margin: 0px;
+    padding-top: 35vh;
+    left: 50%;
+}
+
+/* Check out page */
+input{
+    display: block;
+    border: 1px solid #1F3D47;
+}
+.cta-pay{
+    font-family: "Hind Madurai", serif, monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: normal;
+    background-color: #F14B4B;
+    color: #FFF;
+    text-decoration: none;
+    border: 0px;
+}
+
