@@ -12,6 +12,34 @@ body{
     line-height: 1.6;
     text-align: left;
 }
+.page-wrapper{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.page-header{
+    height: 96px;
+    background-color:#FFF;
+
+}
+.page-main{
+    background-color: #FFF;
+    flex-grow: 1;
+
+}
+.page-footer{
+    height: 393px;
+    background-color:#FFF;
+}
+.container{
+    background-color:#245654;
+    max-width: 1512px;
+    margin: 0 auto;
+}
+.page-main .container{
+    background-color:#FFF;
+}
 h1{
     font-family: 'Montserrat', sans-serif, serif, monospace;
     font-weight: 800;
@@ -32,6 +60,7 @@ h3{
     font-weight: 600;
     font-size: 1.5rem;
     color: #1F3D47;
+    margin: 10px auto;
 }
 a{
     text-decoration: none;
@@ -40,12 +69,17 @@ a{
 img{
     border-radius: 1.25rem;  
 }
+p{
+    margin: 10px auto;
+}
+
 .logo_image{
     border-radius: 0;
     float: left;
-    max-width: 10vW;
-    max-height: 10vh;
-    padding: 0.3rem;
+    max-width: 8rem;
+    max-height: 4.8rem;
+    margin-left: 14.4px;
+    margin-right: 14.4px;
 }
 .fa-solid{
     color: #FFF;
@@ -53,12 +87,21 @@ img{
 .cta-button{
     background-color: #F14B4B;
     color: #FFF;
-    text-decoration: none;
+    text-align: center;
     border-radius: 1.25rem;
     padding: 0.75rem 4.25rem;
 }
+ul{
+    padding: 0;
+}
 
 /* Navigation on page */
+.nav-page{
+    margin-left: 56px;
+}
+.nav-page li{
+    display: inline;
+}
 .nav-page a{
     font-family: "Hind Madurai", serif, monospace;
     font-weight: 400;
@@ -80,76 +123,96 @@ img{
 }
 
   /* Header */
-header{
+.header-container{
     display: flex;
+    justify-content: space-between;
     align-items:center;
-    background-color:#245654;
+
 }
-header a{
+.header-container-item{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.header-container-item a{
     font-family: 'Montserrat', sans-serif, serif, monospace;
     font-weight: 400;
     font-style: normal;
     color: #FFF;
-    margin-right: 1.6rem;
 }
-nav{
-    margin-left: 2.8rem;
-}
-nav ul {
-    padding: 0px;
-    margin: 0px;
-}
-nav li{
-    display: inline-block;
-}
-nav a:hover {
+.header-container-item a:hover {
     text-decoration: underline;
 }
+.header-container-item li{
+    display: inline-block;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem
+}
+/*.header-container-item nav,
+#menu-checkbox{
+    display: none;
+}
+#menu-checkbox:checked ~ .header-container-item nav {
+    display: block;
+}*/
 .search-input{
-    height: 36px;
-    width: 200px;
+    height: auto;
+    max-width: 12.5rem;
+    width: 100%;
     border: 1px solid #FFF;
-    border-radius: 20px;
+    border-radius: 0.75rem;
     background: none;
     outline: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
+    font-family: 'Montserrat', sans-serif, serif, monospace;
+    font-weight: 200;
     font-size: 1rem;
     float: left;
-    line-height: 40px;
 }
-.search-box ::placeholder{
+.search-container ::placeholder{
     color: #FFF;
-    font-weight: 200;
+}
+.search-container{
+    position: relative;
+    caret-color: #FFF;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 0.6rem;
+    left: 90%;
 }
 
 /* Separator */
-.separator{
+.separator-container{
     position: relative;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url('Images/Man-bicycle.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y:center;
     min-height: 45vh
 }
-.separator-content{
+.separator-item{
     position: absolute;
-    left: 3.5rem;
     margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    margin-left: 3.5rem;
 }
-.separator h2{
+.separator-container h2{
     color: #FFF;
     margin-bottom: 0.3rem;
     margin-top: 0rem;
 }
-.separator p{
+.separator-container p{
     color: #FFF;
     margin-top: 0rem;
     margin-bottom: 1.8rem;
 }
-.separator .cta-button{
+.separator-container .cta-button{
     margin-top: 0rem;
 }
 /* Sign up */
@@ -159,26 +222,57 @@ nav a:hover {
 .sign-up>*{
     flex: 1;
 }
-.sign-up-image{
-    border-radius: 0px;
+.sign-up img{
+    border-radius: 0;
     width: 50vw;
 }
-.sign-up-form{
+.sign-right{
+    position: relative;
     background-color: #F6EFD7;
-}
+}    
+.sign-right-content{
+    position:absolute;
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-top: 79.5px;
+    margin-bottom: 79.5px;
 
+}
+.sign-right-content input{
+    display:inline-flex;
+    border: none;
+    width: 23rem;
+    height: 3.5rem;
+}
+input::placeholder{
+    color:#1F3D47;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif, serif, monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    float: left;
+}
+input.cta-button{
+    width: 15rem;
+    height: 3,5rem;
+    font-family: "Hind Madurai", serif, monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: normal;
+    margin-top: 10px;
+}
 /* Footer */
 footer{
     background-color: #245654;
     font-weight: 600;
     color: #FFF;
-    padding-top: 0px;
-    padding-bottom: 0px;
+}
+footer p{
+    text-align: center;
 }
 footer a{
     font-weight: 400;
     text-decoration: none;
-    padding: 45px;
     color: #FFF;
 }
 footer a:hover{
@@ -187,14 +281,41 @@ footer a:hover{
 footer ul{
     list-style: none;
 }
-
-.footer-col{
-    padding-top: 64px;
+footer li{
+    text-align: center;
 }
-.footer-under{
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container-item{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+}
+.social-icons{
+    margin-top: 1.25rem;
+}
+.social-icons a{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+.under-container{
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
 }
+.under-item{
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.payment-icons a{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem
 
+}
 /* Home page */
 .hero-home{
     position: relative;
@@ -205,8 +326,8 @@ footer ul{
     background-image: url('Images/Hiking-in-the-Rain-Quotes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
+    background-position-x: center;
+    background-position-y: top;
     min-height: 110vh
 }
 .hero-home-item{
@@ -221,46 +342,46 @@ footer ul{
     margin-left: 3.5rem;
 }
 .categories{
-    position: relative;
     display: flex;
-    justify-content: flex-start;;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 6rem;
 }
 .ctg{
-    flex: 1;
     position: relative;
-    margin: 1.2rem 1rem 6rem  3.5rem;
-    width: 100%;
-    max-width: 21rem;
-    justify-content: center;
+    flex: 1;
 }
 .ctg img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .ctg .button{
     position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 25%;
+    width: 15rem;
     background-color: #FFF;
     opacity: 73%;
     text-decoration: none;
+    text-align: center;
     color: #1F3D47;
-    border-radius: 20px;
-    padding: 12px
+    border-radius: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 .categories-shop{
-    position: relative;
     display: flex;
-    justify-content: flex-start;;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 6rem;
 }
 .ctg-shop{
     flex: 1;
     position: relative;
-    margin: 1.2rem 1rem 6rem  3.5rem;
-    width: 100%;
-    max-width: 640px;
-    justify-content: center;
+
 }
 .ctg-shop img{
     width: 100%;
@@ -268,24 +389,18 @@ footer ul{
 }
 .ctg-shop .button{
     position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 35%;
+    width: 15rem;
+
     background-color: #FFF;
     opacity: 73%;
     text-decoration: none;
+    text-align: center;
     color: #1F3D47;
-    border-radius: 20px;
-    padding: 12px
-}
-.ctg-shop .button{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FFF;
-    text-decoration: none;
-    color: #1F3D47;
+    border-radius: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 /* All jackets page */
@@ -304,7 +419,61 @@ footer ul{
     padding-top: 35vh;
     left: 50%;
 }
-
+.women-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.women-item{
+    flex: 1;
+}
+.men-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.men-item{
+    flex: 1;
+}
+.wint-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wint-item{
+    flex: 1;
+}
+.wat-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wat-item{
+    flex: 1;
+}
+.wind-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wind-item{
+    flex: 1;
+}
+.women-container img:hover{
+    opacity: 30%;
+}
+.men-container img:hover{
+    opacity: 30%;
+}
+.wint-container img:hover{
+    opacity: 30%;
+}
+.wat-container img:hover{
+    opacity: 30%;
+}
+.wind-container img:hover{
+    opacity: 30%;
+}
 /* Check out page */
 input{
     display: block;
@@ -319,5 +488,70 @@ input{
     color: #FFF;
     text-decoration: none;
     border: 0px;
+}
+/* About us */
+.cta-section{
+    text-align: center;
+    margin-bottom: 96px;
+}
+.cta-section h2{
+    margin-bottom: 56px;
+}
+.about-content{
+    margin: 83.2px 56px;
+}
+
+/* Product card*/
+.product-info{
+   text-align: center;
+   margin-left: 56px;
+   margin-right: 56px;
+}
+.product-info-content img{
+
+    height: 100%;
+}
+.product-info-content{
+    display: flex;
+}
+.product-info-content>*{
+    flex: 1;
+}
+.product-info-content-right{
+    text-align: left;
+    margin-left: 130px;
+}
+.product-info-content-right input{
+    display: inline;
+    width: 30px;
+
+}
+.product-info-content-right fieldset{
+    border: none;
+    margin: 32px 0 32px 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.product-info-content-right .cta-pay{
+    background-color: #F14B4B;
+    color: #FFF;
+    text-align: center;
+    border-radius: 1.25rem;
+    padding: 0.75rem 4.25rem;
+    width: 15rem;
+}
+
+.also-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+.also-item{
+    flex: 1;
+}
+.also-container img:hover{
+    opacity: 30%;
 }
 

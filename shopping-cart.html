@@ -3,120 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainy Days | Shopping cart</title>
+    <title>Rainy Days | Home</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/83b00f3480.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>                
-                <li><a href="index.html">Rainy Days</a></li>
-                <li><a href="all-jackets.html">Women</a></li>
-                <li><a href="all-jackets.html">Men</a></li>
-                <li><a href="all-jackets.html">All jackets</a></li>
-                <li><a href="about-us.html">About us</a></li>
-                <li><a href="contact-us.html">Contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div class="nav-page">
-                <a href="all-jackets.html" class="active">Keep shopping</a>
+    <div class="page-wrapper">
+        <header class="page-header">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header-container-item">
+                        <a href="index.html"><img src="Logo/Logo.png" alt="Rainy days logo" class="logo_image"/></a>
+                    </div>
+                    <div class="header-container-item">
+                        <nav>
+                            <ul>
+                                <li><a href="all-jackets.html">Women</a></li>
+                                <li><a href="all-jackets.html">Men</a></li>
+                                <li><a href="all-jackets.html">All jackets</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="contact-us.html">Contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>            
+                    <div class="header-container-item">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Search in site">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>    
+                    </div>
+                    <div class="header-container-item">
+                        <nav>
+                            <ul>
+                                <li><i class="fa-solid fa-user-large"></i></li>
+                                <li><i class="fa-solid fa-heart"></i></li>
+                                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                            </ul>       
+                        </nav>
+                    </div>    
+                </div>
             </div>
-            <h1>Shopping cart</h1>
-        </section>
-        <section>
-            <img src="Images/Woman-blue-waterproof-jacket_cart .jpg" alt="Woman in blue waterproof jacket" />
-            <h3>Waterproof jacket</h3>
-            <p>$ 200</p>
-            <p>Size:</p>
-            <form>
-                <select name="quantity">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                </select>
-            </form>
-        </section>
-        <section>
-            <h2>Order total</h2>
-            <h2>$ 200</h2>
-            <a href="checkout.html" class="cta-button">To checkout</a>
-        </section>
-        <section>
-            <h2>You might also like</h2>
-            <ul>
-                <div>
-                  <a href="product-card.html"><img src="Images/Women-blue-windproof-jacket_shop.jpg" alt="Woman in blue windproof jacket" /></a>
-                  <h3>Windproof jacket</h3>
-                  <p>$ 200</p>
-                </div>
-                <div>
-                    <a href="product-card.html"><img src="Images/Woman-yellow-winter-jacket_shop.jpg" alt="Woman in yellow winter jacket" /></a>
-                    <h3>Winter jacket</h3>
-                    <p>$ 280</p>
-                </div>
-                <div>
-                    <a href="product-card.html"><img src="Images/Womwn-red-windproof-jacket_shop.jpg" alt="Woman in red windproof jacket" /></a>
-                    <h3>Windproof jacket</h3>
-                    <p>$ 210</p>
-                </div>
-        </section>
-        <section class="sign-up">
-            <img src="Images/Camping-tour.jpg" alt="People on a camping tour"/ class="sign-up_image">
-            <div class="sign-up-form">
-                <h2>Newsletter signup</h2>
-                <p>Stay informed about the latest product news and recive updates from our global network of athletes and partners</p>
-                <form action="form-success.html" method="POST"">
-                    <label for="name">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <a href="form-success.html" class="cta-button">Sign up</a>
-                  </form>
+        </header>
+        <main class="page-main">
+            <div class="container">
+                <section>
+                    <div class="nav-page">
+                        <a href="all-jackets.html" class="active">All jackets</a>
+                    </div>
+                    <h1>Shopping cart</h1>
+                </section>
+                <section>
+                    <img src="Images/Woman-blue-waterproof-jacket_cart .jpg" alt="Woman in blue waterproof jacket" />
+                    <h3>Waterproof jacket</h3>
+                    <p>$ 200</p>
+                    <p>Size:</p>
+                    <form>
+                        <select name="quantity">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                        </select>
+                    </form>
+                </section>
+                <section>
+                    <h2>Order total</h2>
+                    <h2>$ 200</h2>
+                    <a href="checkout.html" class="cta-button">To checkout</a>
+                </section>
+                <section class="also">
+                    <div class="section-name">
+                        <h2>You might also like</h2>
+                    </div>
+                    <div class="also-container">
+                        <div class="also-item">
+                            <a href="product-card.html"><img src="Images/Women-blue-windproof-jacket_shop.jpg" alt="Woman in blue windproof jacket" /></a>
+                            <h3>Windproof jacket</h3>
+                            <p>$ 200</p>
+                        </div>
+                        <div class="also-item">
+                            <a href="product-card.html"><img src="Images/Woman-yellow-winter-jacket_shop.jpg" alt="Woman in yellow winter jacket" /></a>
+                            <h3>Winter jacket</h3>
+                            <p>$ 280</p>
+                        </div>
+                        <div class="also-item">
+                            <a href="product-card.html"><img src="Images/Womwn-red-windproof-jacket_shop.jpg" alt="Woman in red windproof jacket" /></a>
+                            <h3>Windproof jacket</h3>
+                            <p>$ 210</p>
+                        </div>
+                    </div>  
+                </section>
+                <section class="sign-up">
+                    <img src="Images/Camping-tour.jpg" alt>
+                    <div class="sign-right">
+                        <div class="sign-right-content">
+                            <h2>Newsletter signup</h2>
+                            <p>Stay informed about the latest product news and recive updates from our global network of athletes and partners</p>
+                            <form action="form-success.html" method="post">
+                                <input type="email" class="email-input" id="email" name="email" placeholder="Your email">
+                                <input type="submit" value="Sign up" class="cta-button"/>
+                            </form>
+                        </div>    
+                    </div>
+                </section>
             </div>
-        </section>
-    </main>
-<footer>
-    <section>
-        <ul>
-            <li><a href="index.html">Rainy Days</a></li>
-            <li>
-                About us
-                <ul>
-                    <li><a href="about-us.html">About us</a></li>
-                    <li><a href="career.html">Career</a></li>
-                </ul>
-            </li>
-            <li>
-                Menu
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="all-jackets.html">Women</a></li>
-                    <li><a href="all-jackets.html">Men</a></li>
-                    <li><a href="all-jackets.html">All jackets</a></li>
-                </ul>
-            </li>
-            <li>
-                Information
-                <ul>
-                    <li><a href="contact-us.html">Contact us</a></li>
-                    <li><a href="oredrs.html">Orders</a></li>
-                    <li><a href="payment.html">Payment</a></li>
-                    <li><a href="delivery.html">Delivery</a></li>
-                    <li><a href="returns.html">Delivery</a></li>
-                    <li><a href="size-guide.html">Size guide</a></li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <ul>
-            <li>&copy; RainyDays</li>
-        </ul>
-    </section>
-</footer>
+        </main>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-container-item">
+                        <a href="index.html">
+                            <img src="Logo/Logo.png" alt="Rainy days logo" class="logo_image"/>
+                        </a>
+                    </div>
+                    <div class="footer-container-item">
+                        <p>About us:</p>
+                            <ul>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="career.html">Career</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-container-item">
+                        <p>Menu:</p>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="all-jackets.html">Women</a></li>
+                                <li><a href="all-jackets.html">Men</a></li>
+                                <li><a href="all-jackets.html">All jackets</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-container-item">
+                        <p>Information:</p>
+                            <ul>
+                                <li><a href="contact-us.html">Contact us</a></li>
+                                <li><a href="oredrs.html">Orders</a></li>
+                                <li><a href="payment.html">Payment</a></li>
+                                <li><a href="delivery.html">Delivery</a></li>
+                                <li><a href="size-guide.html">Size guide</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-container-item">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="under-container">
+                    <div class="under-item">
+                        <a>&copy; RainyDays</a>
+                    </div>
+                    <div class="under-item">
+                        <div class="payment-icons">
+                            <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+                            <a href="#"><i class="fa-brands fa-paypal"></i></a>
+                            <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-pay"></i></a>
+                        </div>
+                    </div>   
+                </div>   
+            </div>      
+        </footer>
+    </div>
 </body>
 </html>
