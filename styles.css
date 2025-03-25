@@ -37,6 +37,7 @@ body{
     max-width: 1512px;
     margin: 0 auto;
 }
+
 .page-main .container{
     background-color:#FFF;
 }
@@ -196,6 +197,12 @@ ul{
     background-position-x: center;
     min-height: 45vh
 }
+@media (max-width: 600px) {
+    .separator-container {
+      background-image: url('Images/Man-bicycle-mobile.jpg');
+      min-height: 100vh
+    }
+  }
 .separator-item{
     position: absolute;
     margin-top: 2.4rem;
@@ -219,18 +226,17 @@ ul{
 .sign-up{
     display: flex;
 }
-.sign-up>*{
-    flex: 1;
-}
+
 .sign-up img{
     border-radius: 0;
     width: 50vw;
 }
-.sign-right{
+.sign-item{
+    flex: 1;
     position: relative;
     background-color: #F6EFD7;
 }    
-.sign-right-content{
+.sign-item-content{
     position:absolute;
     margin-left: 56px;
     margin-right: 56px;
@@ -241,7 +247,7 @@ ul{
 .sign-right-content input{
     display:inline-flex;
     border: none;
-    width: 23rem;
+    width: 18rem;
     height: 3.5rem;
 }
 input::placeholder{
@@ -330,6 +336,16 @@ footer li{
     background-position-y: top;
     min-height: 110vh
 }
+@media (max-width: 600px) {
+    .hero-home {
+      background-image: url('Images/Hiking-in-the-Rain-Quotes:mobile.jpg');
+    }
+  }
+  @media (max-width: 1024px) {
+    .hero-home {
+      background-image: url('Images/Hiking-in-the-Rain-Quotes-tablet.jpg');
+    }
+  }
 .hero-home-item{
     margin: 2.4rem;
 }
@@ -343,21 +359,21 @@ footer li{
 }
 .categories{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1rem;
+    flex-wrap: wrap;
+
     margin-top: 1.2rem;
     margin-bottom: 6rem;
+  
 }
+
 .ctg{
-    position: relative;
     flex: 1;
+    
 }
-.ctg img{
-    width: 100%;
-    height: 100%;
-}
-.ctg .button{
+
+
+/*.ctg .button{
     position: absolute;
     top: 85%;
     left: 25%;
@@ -369,8 +385,7 @@ footer li{
     color: #1F3D47;
     border-radius: 1.25rem;
     padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
+    padding-bottom: 0.75rem;*/
 .categories-shop{
     display: flex;
     justify-content: space-between;
@@ -381,7 +396,6 @@ footer li{
 .ctg-shop{
     flex: 1;
     position: relative;
-
 }
 .ctg-shop img{
     width: 100%;
@@ -408,10 +422,20 @@ footer li{
     background-image: url('Images/Men-ski.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: center;
     background-position-y: top;
     min-height: 70vh
 }
+@media (max-width: 600px) {
+    .hero-shop {
+      background-image: url('Images/Men-ski-mobile.jpg');
+    }
+  }
+  @media (max-width: 1024px) {
+    .hero-shop {
+      background-image: url('Images/Men-ski-tablet.jpg');
+    }
+  }
 .hero-shop h1{
     color: #FFF;
     text-align: center;
@@ -528,7 +552,7 @@ input{
 }
 .product-info-content-right fieldset{
     border: none;
-    margin: 32px 0 32px 0;
+    margin: 32px 0 px 0;
     padding-left: 0;
     padding-right: 0;
 }
@@ -554,4 +578,48 @@ input{
 .also-container img:hover{
     opacity: 30%;
 }
+/* Shopping cart */
+select{
+    width: 60px;
+    height: 40px;
+    font-weight: 200;
+    font-size: 1rem;
+}
 
+/* Contact page */
+.contact-form input{
+  border: 1px solid #1F3D47;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+  
+}
+
+textarea {
+  height: 65%;
+  border: 1px solid #1F3D47;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+.contact-form{
+  display: flex;
+  text-align: left;
+}
+
+.contact-form > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+input.cta-button{
+    border: none;
+    margin-left: 56px;
+}
+.contact-info{
+    margin-left: 56px;
+    margin-right: 10px;
+}
+.contact-message{
+    margin-right: 56px;
+    margin-left: 10px;
+}
