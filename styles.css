@@ -19,9 +19,8 @@ body{
     height: 100vh;
 }
 .page-header{
-    height: 96px;
     background-color:#FFF;
-
+    
 }
 .page-main{
     background-color: #FFF;
@@ -79,12 +78,13 @@ p{
     float: left;
     max-width: 8rem;
     max-height: 4.8rem;
-    margin-left: 14.4px;
-    margin-right: 14.4px;
+    padding-bottom: 10px;
+
 }
 .fa-solid{
     color: #FFF;
 }
+
 .cta-button{
     background-color: #F14B4B;
     color: #FFF;
@@ -128,12 +128,12 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items:center;
-
 }
 .header-container-item{
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
 .header-container-item a{
     font-family: 'Montserrat', sans-serif, serif, monospace;
     font-weight: 400;
@@ -148,14 +148,31 @@ ul{
     margin-right: 1.2rem;
     margin-left: 1.2rem
 }
-/*.header-container-item nav,
-#menu-checkbox{
+
+.menu, 
+#sidebar-active {
     display: none;
 }
-#menu-checkbox:checked ~ .header-container-item nav {
+#sidebar-active:checked ~ .menu {
     display: block;
-}*/
-.search-input{
+}
+.menu a{
+    display: block;
+}
+@media (min-width: 1150px) {
+    .menu {
+      display: block;
+    }
+    .menu a{
+        display: inline;
+    }
+    .ham-icon{
+        display: none;
+    }
+  }
+ 
+
+/*.search-input{
     height: auto;
     max-width: 12.5rem;
     width: 100%;
@@ -183,6 +200,7 @@ ul{
     top: 0.6rem;
     left: 90%;
 }
+*/
 
 /* Separator */
 .separator-container{
@@ -292,15 +310,25 @@ footer li{
 }
 .footer-container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
 .footer-container-item{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 4rem;
+
 }
 .social-icons{
     margin-top: 1.25rem;
+   
+  
 }
 .social-icons a{
     margin-left: 1.2rem;
@@ -309,9 +337,16 @@ footer li{
 .under-container{
     font-weight: 400;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 1.5rem;
 }
+@media (max-width: 600px) {
+    .under-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
 .under-item{
     margin-bottom: 1.5rem;
     margin-left: 2rem;
@@ -369,6 +404,7 @@ footer li{
 
 .ctg{
     flex: 1;
+    align-items: center;
     
 }
 
