@@ -19,13 +19,12 @@ body{
     height: 100vh;
 }
 .page-header{
-    background-color:#FFF;
-    
-}
+    background-color: #FFF;
+}    
+
 .page-main{
     background-color: #FFF;
     flex-grow: 1;
-
 }
 .page-footer{
     height: 393px;
@@ -33,12 +32,12 @@ body{
 }
 .container{
     background-color:#245654;
-    max-width: 1512px;
+    height: 100%;
+    max-width: 1800px;
     margin: 0 auto;
 }
-
 .page-main .container{
-    background-color:#FFF;
+    background-color:#F6EFD7;
 }
 h1{
     font-family: 'Montserrat', sans-serif, serif, monospace;
@@ -47,6 +46,7 @@ h1{
     color: #245654;
     line-height: 1.1;
     text-align: center;
+    margin: 0;
 }
 h2{
     font-family: 'Montserrat', sans-serif, serif, monospace;
@@ -79,7 +79,6 @@ p{
     max-width: 8rem;
     max-height: 4.8rem;
     padding-bottom: 10px;
-
 }
 .fa-solid{
     color: #FFF;
@@ -94,6 +93,7 @@ p{
 }
 ul{
     padding: 0;
+    margin: 0;
 }
 
 /* Navigation on page */
@@ -156,9 +156,12 @@ ul{
 #sidebar-active:checked ~ .menu {
     display: block;
 }
+
 .menu a{
     display: block;
+    color: #FFF;
 }
+
 @media (min-width: 1150px) {
     .menu {
       display: block;
@@ -241,7 +244,7 @@ ul{
     margin-top: 0rem;
 }
 /* Sign up */
-.sign-up{
+/*.sign-up{
     display: flex;
 }
 
@@ -376,7 +379,7 @@ footer li{
       background-image: url('Images/Hiking-in-the-Rain-Quotes:mobile.jpg');
     }
   }
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     .hero-home {
       background-image: url('Images/Hiking-in-the-Rain-Quotes-tablet.jpg');
     }
@@ -393,23 +396,26 @@ footer li{
     margin-left: 3.5rem;
 }
 .categories{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-
+    gap: 1rem;
     margin-top: 1.2rem;
     margin-bottom: 6rem;
-  
+    margin-left: 56px;
 }
-
 .ctg{
+    width: 456px;
+    height: 528px;
     flex: 1;
-    align-items: center;
-    
+    position: relative;
+    justify-items: center;
+
 }
-
-
-/*.ctg .button{
+.ctg img{
+    width: 100%;
+    height: auto;
+}
+.ctg .button{
     position: absolute;
     top: 85%;
     left: 25%;
@@ -421,15 +427,19 @@ footer li{
     color: #1F3D47;
     border-radius: 1.25rem;
     padding-top: 0.75rem;
-    padding-bottom: 0.75rem;*/
+    padding-bottom: 0.75rem;
+}
 .categories-shop{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     gap: 1rem;
     margin-top: 1.2rem;
     margin-bottom: 6rem;
+    margin-left: 56px;
 }
 .ctg-shop{
+    width: 690px;
+    height: 592px;
     flex: 1;
     position: relative;
 }
@@ -442,7 +452,6 @@ footer li{
     top: 85%;
     left: 35%;
     width: 15rem;
-
     background-color: #FFF;
     opacity: 73%;
     text-decoration: none;
@@ -480,44 +489,49 @@ footer li{
     left: 50%;
 }
 .women-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-left: 56px;
 }
 .women-item{
-    flex: 1;
+    width: 456px;
 }
 .men-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-left: 56px;
 }
 .men-item{
-    flex: 1;
+    width: 456px;
 }
 .wint-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-left: 56px;
 }
 .wint-item{
-    flex: 1;
+    width: 456px;
 }
 .wat-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-left: 56px;
 }
 .wat-item{
-    flex: 1;
+    width: 456px;
 }
 .wind-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-left: 56px;
 }
 .wind-item{
-    flex: 1;
+    width: 456px;
 }
 .women-container img:hover{
     opacity: 30%;
@@ -602,14 +616,15 @@ input{
 }
 
 .also-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: space-between;
+    gap: 1rem;
     margin-left: 56px;
     margin-right: 56px;
 }
 .also-item{
-    flex: 1;
+    width: 456px;
+
 }
 .also-container img:hover{
     opacity: 30%;
