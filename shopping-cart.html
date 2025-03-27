@@ -37,26 +37,30 @@
         </header>
         <main class="page-main">
             <div class="container">
-                <h1>Shopping cart</h1>
                 <section class="nav-page">
                     <a href="all-jackets.html" class="active">Keep shopping</a>
                 </section>
+                <div class="page-name">
+                    <h1>Shopping cart</h1>
+                </div>
                 <section class="product-info">
                     <div class="product-info-content">
                         <img src="Images/Woman-blue-waterproof-jacket_cart .jpg" alt="Woman in blue waterproof jacket" />
                         <div class="product-info-content-right">
                             <h2>Waterproof jacket</h2>
-                            <p>$ 200</p>
+                            <h3>$ 200</h3>
                             <p>Size:</p>
-                            <form>
+                            <form method="post">
                                 <select name="quantity">
                                 <option value="one">1</option>
                                 <option value="two">2</option>
                                 <option value="three">3</option>
                                 </select>
                             </form>
-                            <h2>Order total</h2>
-                            <h2>$ 200</h2>
+                            <div class="order-total">
+                                <h2>Order total:</h2>
+                                <h2 class="price">$ 200</h2>
+                            </div>
                             <a href="checkout.html" class="cta-button">To checkout</a>
                         </div>
                     
@@ -129,7 +133,6 @@
                         </div>
                     </div>
                 </div>
-                <hr />
                 <div class="under-container">
                     <div class="under-item">
                         <a>&copy; RainyDays</a>

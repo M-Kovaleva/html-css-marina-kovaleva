@@ -104,9 +104,7 @@ ul{
 
 /* Navigation on page */
 .nav-page{
-    margin-right:2rem;
-    margin-bottom: 3rem;
-    margin-left: 2rem;
+    margin:0 2rem 0 0; 
     padding: 3rem;
     display: flex;
     justify-content: space-between;
@@ -293,7 +291,7 @@ footer li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1.5rem;
+    margin-top: 4rem;
 }
 @media (max-width: 600px) {
     .under-container {
@@ -595,21 +593,7 @@ hr{
 .wind-container img:hover{
     opacity: 30%;
 }
-/* Check out page */
-input{
-    display: block;
-    border: 1px solid #1F3D47;
-}
-.cta-pay{
-    font-family: "Hind Madurai", serif, monospace;
-    font-weight: 400;
-    font-size: 1.25rem;
-    font-style: normal;
-    background-color: #F14B4B;
-    color: #FFF;
-    text-decoration: none;
-    border: 0px;
-}
+
 /* About us */
 .about{
     display: flex;
@@ -672,6 +656,27 @@ input{
     margin-bottom: 2rem;
 }
 
+/* Shopping cart */
+.page-name{
+    margin-bottom: 3rem;
+}
+select{
+    width: 60px;
+    height: 40px;
+    font-weight: 200;
+    font-size: 1rem;
+}
+.product-info-content-right form{
+    margin-bottom: 3rem;
+}
+.order-total{
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 3rem;
+}
+.price{
+    color: #F14B4B;
+}
 /* Also like */
 .also-container{
     display: inline-flex;
@@ -688,12 +693,53 @@ input{
 .also-container img:hover{
     opacity: 30%;
 }
-/* Shopping cart */
-select{
-    width: 60px;
-    height: 40px;
-    font-weight: 200;
-    font-size: 1rem;
+/* Check out page */
+.checkout-info{
+    margin: 0 3rem 3rem 3rem;
+}
+.checkout-info-content img{
+    max-width: 15rem;
+    margin: 1rem 0 0 1rem;
+}
+.checkout-info-content-right .product-info-content-right{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    margin: 1rem 0 0 1rem;
+}
+.checkout-info-content-right .product-info-content-right>*{
+    flex: 1;
+}
+.checkout-info-content{
+    display: flex;
+    gap: 1rem;
+     
+}
+.checkout-info-content>*{
+    flex: 1;
+}
+.checkout-info-content-right{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1F3D47;
+}
+input{
+    display: block;
+    border: 1px solid #1F3D47;
+}
+.contact-info-right img{
+    max-width: 10rem;
+}
+.cta-pay{
+    font-family: "Hind Madurai", serif, monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: normal;
+    background-color: #F14B4B;
+    color: #FFF;
+    text-decoration: none;
+    border: 0px;
 }
 
 /* Contact page */
