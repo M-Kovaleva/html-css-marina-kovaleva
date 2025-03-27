@@ -38,51 +38,48 @@
         <main class="page-main">
             <div class="container">
                 <section class="nav-page">
-                    <nav>
-                        <a href="index.html">Home ></a></li>
-                        <a href="all-jackets.html">All jackets ></a></li>
-                        <a href="product-card.html" class="active">Waterproof jacket</a></li>
-                    </nav>
                     <a href="all-jackets.html" class="active">Keep shopping</a>
                 </section>
                 <section class="checkout-info">
                     <div class="checkout-info-content">
-                        <form action="order-confirmation.html" method="post" class="payment">
-                            <fieldset>
-                                <legend>Contact info</legend>
-                                <label for="email">Email</label>
-                                <input type="email" id="email" class="form__input" required>
-                                <label for="name">First name</label>
-                                <input type="text" id="name" class="form__input" required>
-                                <label for="lastname">Last name</label>
-                                <input type="text" id="lastname" class="form__input" required>
-                                <label for="address">Address</label>
-                                <input type="text" id="address" class="form__input" required>
-                                <label for="city">City</label>
-                                <input type="text" id="city" class="form__input" required>
-                                <label for="postcode">Post code</label>
-                                <input type="text" id="postcode" class="form__input" required>
-                                <label for="country">Land</label>
-                                <input type="text" id="country" class="form__input" required>
-                                <label for="phone">Mobile phone</label>
-                                <input type="tel" id="phone" class="form__input" required>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Shipping</legend>
-                                <label for="delivery">Posten delivery home</label>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Payment</legend>
-                                <a href="#" class="active">Do you have a promotional code?</a>
-                                <input type="radio" id="card" name="payment" value="card" class="form__input" required>
-                                <label for="card">Credit/Debit Card</label>
-                                <input type="radio" id="paypal" name="payment" value="paypal" class="form__input" required>
-                                <label for="paypal">PayPal</label>
-                                <input type="radio" id="google-pay" name="payment" value="google-pay" class="form__input" required>
-                                <label for="google-pay">Google Pay</label>
-                            </fieldset>
-                            <input type="submit" value="Pay order" class="cta-pay"/>
-                        </form>  
+                        <div>
+                            <form action="order-confirmation.html" method="post" class="payment">
+                                <fieldset>
+                                    <legend>Contact info</legend>
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" class="form__input" required>
+                                    <label for="name">First name</label>
+                                    <input type="text" id="name" class="form__input" required>
+                                    <label for="lastname">Last name</label>
+                                    <input type="text" id="lastname" class="form__input" required>
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" class="form__input" required>
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" class="form__input" required>
+                                    <label for="postcode">Post code</label>
+                                    <input type="text" id="postcode" class="form__input" required>
+                                    <label for="country">Land</label>
+                                    <input type="text" id="country" class="form__input" required>
+                                    <label for="phone">Mobile phone</label>
+                                    <input type="tel" id="phone" class="form__input" required>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Shipping</legend>
+                                    <label for="delivery">Posten delivery home</label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Payment</legend>
+                                    <input type="radio" id="card" name="payment" value="card" class="form__input" required>
+                                    <label for="card">Credit/Debit Card</label>
+                                    <input type="radio" id="paypal" name="payment" value="paypal" class="form__input" required>
+                                    <label for="paypal">PayPal</label>
+                                    <input type="radio" id="google-pay" name="payment" value="google-pay" class="form__input" required>
+                                    <label for="google-pay">Google Pay</label>
+                                </fieldset>
+                                <input type="submit" value="Pay order" class="cta-pay"/>
+                            </form>  
+                        </div>
+                        
                         <div class="checkout-info-content-right">
                             <div class="product-info-content-right">
                                 <img src="Images/Woman-blue-waterproof-jacket_shop.jpg" alt="Woman in blue waterproof jacket" />
@@ -99,20 +96,23 @@
                                     </form>
                                 </div>
                                 
-                        </div>
+                             </div>
+                             <div class="order">
+                                <div class="order-total">
+                                    <h2>Order total:</h2>
+                                    <h3>Shipping:</h3>
+                                    <h3>Total products:</h3>
+                                    <h2>Order total:</h2>  
+                                </div>
+                                <div class="order-total">
+                                    <h2 class="price">$ 200</h2>
+                                    <h3>Free</h3>
+                                    <h3>$200</h3>
+                                    <h2 class="price">$ 200</h2>  
+                                </div>
+                             </div>
                 
-                        <div class="order-total">
-                                <h2>Order total:</h2>
-                                <h2 class="price">$ 200</h2>
-                        </div>
-                        <div class="shopping">
-                            <h3>Shipping:</h3>
-                            <h3>Free</h3>
-                            <h3>Total products:</h3>
-                            <h3>$200</h3>
-                            <h2>Order total:</h2>
-                            <h2>$200</h2>
-                            </div>
+                               
                         </div>  
 
 

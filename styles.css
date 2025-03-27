@@ -669,11 +669,7 @@ select{
 .product-info-content-right form{
     margin-bottom: 3rem;
 }
-.order-total{
-    display: flex;
-    gap: 6rem;
-    margin-bottom: 3rem;
-}
+
 .price{
     color: #F14B4B;
 }
@@ -697,28 +693,32 @@ select{
 .checkout-info{
     margin: 0 3rem 3rem 3rem;
 }
+
 .checkout-info-content img{
     max-width: 15rem;
+    max-height: 15.5rem;
     margin: 1rem 0 0 1rem;
 }
 .checkout-info-content-right .product-info-content-right{
     display: flex;
     flex-direction: row;
     gap: 2rem;
-
-    margin: 1rem 0 0 1rem;
+    margin: 1rem 1rem 0 1rem;
 }
 .checkout-info-content-right .product-info-content-right>*{
     flex: 1;
 }
 .checkout-info-content{
-    display: flex;
-    gap: 1rem;
-     
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     gap: 4rem;
 }
+
 .checkout-info-content>*{
     flex: 1;
 }
+   
 .checkout-info-content-right{
     display: flex;
     flex-direction: column;
@@ -728,19 +728,23 @@ input{
     display: block;
     border: 1px solid #1F3D47;
 }
+.checkout-info-content input{
+    
+}
 .contact-info-right img{
     max-width: 10rem;
 }
-.cta-pay{
-    font-family: "Hind Madurai", serif, monospace;
-    font-weight: 400;
-    font-size: 1.25rem;
-    font-style: normal;
-    background-color: #F14B4B;
-    color: #FFF;
-    text-decoration: none;
-    border: 0px;
+.order-total{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
+.order{
+    display: flex;
+    gap: 8rem;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
 
 /* Contact page */
 .contact-form input{
