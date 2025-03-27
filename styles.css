@@ -27,7 +27,6 @@ body{
     flex-grow: 1;
 }
 .page-footer{
-
     background-color:#FFF;
 }
 .container{
@@ -38,8 +37,8 @@ body{
 
 }
 .page-main .container{
-    background-color:#F6EFD7;
-}
+    background-color:#F6EFD7;}
+
 h1{
     font-family: 'Montserrat', sans-serif, serif, monospace;
     font-weight: 800;
@@ -200,7 +199,9 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    min-height: 45vh
+    min-height: 45vh;
+    margin: 3rem 0 0 0;
+
 }
 @media (max-width: 600px) {
     .separator-container {
@@ -236,11 +237,7 @@ ul{
     margin-top: 0rem;
 }
 /* Footer */
-footer{
-    background-color: #245654;
-    font-weight: 600;
-    color: #FFF;
-}
+
 footer p{
     text-align: center;
 }
@@ -262,6 +259,7 @@ footer li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: #FFF;
 }
 @media (max-width: 800px) {
     .footer-container {
@@ -297,6 +295,10 @@ footer li{
         align-items: center;
     }
   }
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
 .under-item{
     margin-bottom: 1.5rem;
     margin-left: 2rem;
@@ -339,24 +341,106 @@ footer li{
     margin: 0px;
 }
 .section-name{
-   
+    display: flex;
+    margin: 3rem 3rem 1rem 3rem;
+
+}
+.shop{
+    display:flex;
+    flex-direction: column;
+
 }
 .categories{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+@media (min-width: 1350px) {
+    .shop .categories{
+        flex-direction: row;
+    }
+  
 }
 .ctg{
+    width: 300px;
     position: relative;
 
 }
+
+    
 .ctg img{
     width: 100%;
     height: auto;
 }
 .ctg .button{
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 25%;
+    width: 10rem;
+    background-color: #FFF;
+    opacity: 73%;
+    text-decoration: none;
+    text-align: center;
+    color: #1F3D47;
+    border-radius: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+@media (min-width: 1024px) {
+    .categories .ctg{
+        width: 600px;
+        position: relative;
+    }
+    .ctg .button{
+        position: absolute;
+        top: 85%;
+        left: 25%;
+        width: 15rem;
+        background-color: #FFF;
+        opacity: 73%;
+        text-decoration: none;
+        text-align: center;
+        color: #1F3D47;
+        border-radius: 1.25rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+}
+
+
+.categories-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+@media (min-width: 1350px) {
+    .shop .categories-shop{
+        flex-direction: row;
+    }
+
+}
+.ctg-shop{
+    width: 828px;
+    position: relative;
+
+}
+.ctg-shop img{
+    width: 100%;
+    height: auto;
+}
+.ctg-shop .button{
+    position: absolute;
+    top: 85%;
+    left: 35%;
     width: 15rem;
     background-color: #FFF;
     opacity: 73%;
@@ -367,7 +451,7 @@ footer li{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
-.categories-shop{
+/*.categories-shop{
     display: inline-flex;
     justify-content: space-between;
     gap: 1rem;
@@ -398,7 +482,7 @@ footer li{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
-
+*/
 /* All jackets page */
 .hero-shop {
     background-image: url('Images/Men-ski.jpg');
@@ -429,7 +513,7 @@ footer li{
     display: inline-flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-left: 56px;
+
 }
 .women-item{
     width: 456px;
