@@ -32,7 +32,10 @@ body{
 .container{
     background-color:#245654;
     height: 100%;
-    max-width: 1800px;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+
     margin: 0 auto;
 
 }
@@ -60,7 +63,7 @@ h3{
     font-weight: 600;
     font-size: 1.5rem;
     color: #1F3D47;
-    margin: 10px auto;
+    margin: 1rem auto;
 }
 a{
     text-decoration: none;
@@ -70,7 +73,7 @@ img{
     border-radius: 1.25rem;  
 }
 p{
-    margin: 10px auto;
+    margin: 1rem auto;
 }
 
 .logo_image{
@@ -78,8 +81,8 @@ p{
     float: left;
     max-width: 8rem;
     max-height: 4.8rem;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .fa-solid{
     color: #FFF;
@@ -101,12 +104,15 @@ ul{
 
 /* Navigation on page */
 .nav-page{
-    margin:3rem 2rem 3rem 2rem ;
-    display: inline-flex;
+    margin-right:2rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    padding: 3rem;
+    display: flex;
     justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 42.5rem) {
     .nav-page{
         flex-direction: column;
         gap: 1.2rem
@@ -429,7 +435,7 @@ hr{
 
 }
 .ctg-shop{
-    width: 828px;
+    width: 300px;
     position: relative;
 
 }
@@ -439,9 +445,9 @@ hr{
 }
 .ctg-shop .button{
     position: absolute;
-    top: 85%;
-    left: 35%;
-    width: 15rem;
+    top: 65%;
+    left: 25%;
+    width: 10rem;
     background-color: #FFF;
     opacity: 73%;
     text-decoration: none;
@@ -451,6 +457,26 @@ hr{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
+@media (min-width: 1024px) {
+    .categories-shop .ctg-shop{
+        width: 828px;
+        position: relative;
+    }
+    .ctg-shop .button{
+        position: absolute;
+        top: 85%;
+        left: 35%;
+        width: 15rem;
+        background-color: #FFF;
+        opacity: 73%;
+        text-decoration: none;
+        text-align: center;
+        color: #1F3D47;
+        border-radius: 1.25rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+}   
 /*.categories-shop{
     display: inline-flex;
     justify-content: space-between;
@@ -585,45 +611,54 @@ input{
     border: 0px;
 }
 /* About us */
+.about{
+    display: flex;
+    flex-direction: column;
+}
 .cta-section{
     text-align: center;
-    margin-bottom: 96px;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
 }
 .cta-section h2{
-    margin-bottom: 56px;
+    margin-bottom: 3rem;
 }
+
 .about-content{
-    margin: 83.2px 56px;
+    margin: 3rem 3rem 0 3rem;
 }
 
 /* Product card*/
 .product-info{
-   text-align: center;
-   margin-left: 56px;
-   margin-right: 56px;
+    margin: 0 3rem 3rem 3rem;
 }
 .product-info-content img{
-
     height: 100%;
 }
 .product-info-content{
     display: flex;
+    gap: 8rem
 }
 .product-info-content>*{
     flex: 1;
 }
+@media (max-width: 880px){
+    .product-info-content{
+        flex-direction: column;
+    }
+}
 .product-info-content-right{
     text-align: left;
-    margin-left: 130px;
 }
 .product-info-content-right input{
     display: inline;
-    width: 30px;
+    width: 2rem;
 
 }
 .product-info-content-right fieldset{
     border: none;
-    margin: 32px 0 px 0;
+    margin: 2rem 0 2rem 0;
     padding-left: 0;
     padding-right: 0;
 }
@@ -634,14 +669,17 @@ input{
     border-radius: 1.25rem;
     padding: 0.75rem 4.25rem;
     width: 15rem;
+    margin-bottom: 2rem;
 }
 
+/* Also like */
 .also-container{
     display: inline-flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-left: 56px;
-    margin-right: 56px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
 }
 .also-item{
     width: 456px;
