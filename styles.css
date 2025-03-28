@@ -1,3 +1,4 @@
+@import "media.css";
 @import "variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
@@ -111,13 +112,7 @@ ul{
     justify-content: space-between;
 }
 
-@media (max-width: 42.5rem) {
-    .nav-page{
-        flex-direction: column;
-        gap: 1.2rem
-    }    
-   
-  }
+
 .nav-page a{
     font-family: var(--text-paragraph), serif, monospace;
     font-weight: var(--text-weight-paragraph);
@@ -169,30 +164,7 @@ ul{
     margin-top: 32px;
 }
 
-@media (min-width: 1150px) {
-    .fa-solid{
-        margin-right: 1.2rem;
-        margin-left: 1.2rem;
-    }    
-    .header-container{
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    
-    .menu {
-        display:block;
-        margin-top: 2rem;
-    }
-    .menu a{
-        display: inline;
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
-    }
-    .ham-icon{
-        display: none;
-    }
-  }
- 
+
 /* Separator */
 .separator-container{
     position: relative;
@@ -208,18 +180,6 @@ ul{
     margin: 3rem 0 0 0;
 
 }
-@media (max-width: 600px) {
-    .separator-container {
-      background-image: url('Images/Man-bicycle-mobile.jpg');
-      min-height: 100vh
-    }
-  }
-  @media (max-height: 600px) {
-    .separator-container {
-      background-image: url('Images/Man-bicycle.jpg');
-      min-height: 150vh
-    }
-  }
 
 
 .separator-item{
@@ -266,12 +226,7 @@ footer li{
     justify-content: space-between;
     color: var(--color-hero-cta);
 }
-@media (max-width: 800px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-  }
+
 .footer-container-item{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -294,12 +249,7 @@ footer li{
     justify-content: space-between;
     margin-top: 4rem;
 }
-@media (max-width: 600px) {
-    .under-container {
-        flex-direction: column;
-        align-items: center;
-    }
-  }
+
 
 .under-item{
     margin-bottom: 1.5rem;
@@ -325,16 +275,7 @@ footer li{
     background-position-y: top;
     min-height: 110vh
 }
-@media (max-width: 600px) {
-    .hero-home {
-      background-image: url('Images/Hiking-in-the-Rain-Quotes:mobile.jpg');
-    }
-  }
-@media (max-width: 1024px) {
-    .hero-home {
-      background-image: url('Images/Hiking-in-the-Rain-Quotes-tablet.jpg');
-    }
-  }
+
 .hero-home-item{
     margin: 2.4rem;
 }
@@ -361,12 +302,7 @@ footer li{
     margin-right: 3rem;
 }
 
-@media (min-width: 1350px) {
-    .shop .categories{
-        flex-direction: row;
-    }
-  
-}
+
 .ctg{
     width: 300px;
     position: relative;
@@ -392,27 +328,7 @@ footer li{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
-@media (min-width: 1024px) {
-    .categories .ctg{
-        width: 600px;
-        position: relative;
-    }
-    .ctg .button{
-        position: absolute;
-        top: 85%;
-        left: 25%;
-        width: 15rem;
-        background-color: var(--color-hero-cta);
-        opacity: 73%;
-        text-decoration: none;
-        text-align: center;
-        color: var(--color-body-paragraph);
-        border-radius: var(--img-border-radius);
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-    }
 
-}
 
 
 .categories-shop{
@@ -424,12 +340,7 @@ footer li{
     margin-right: 3rem;
     margin-bottom: 3rem;
 }
-@media (min-width: 1350px) {
-    .shop .categories-shop{
-        flex-direction: row;
-    }
 
-}
 .ctg-shop{
     width: 300px;
     position: relative;
@@ -453,26 +364,7 @@ footer li{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
-@media (min-width: 1024px) {
-    .categories-shop .ctg-shop{
-        width: 828px;
-        position: relative;
-    }
-    .ctg-shop .button{
-        position: absolute;
-        top: 85%;
-        left: 35%;
-        width: 15rem;
-        background-color: var(--color-hero-cta);
-        opacity: 73%;
-        text-decoration: none;
-        text-align: center;
-        color: var(--color-body-paragraph);
-        border-radius: var(--img-border-radius);
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-    }
-}   
+
 /* All jackets page */
 .hero-shop {
     background-image: url('Images/Men-ski.jpg');
@@ -482,16 +374,7 @@ footer li{
     background-position-y: top;
     min-height: 70vh
 }
-@media (max-width: 600px) {
-    .hero-shop {
-      background-image: url('Images/Men-ski-mobile.jpg');
-    }
-  }
-  @media (max-width: 1024px) {
-    .hero-shop {
-      background-image: url('Images/Men-ski-tablet.jpg');
-    }
-  }
+
 .hero-shop h1{
     color: var(--color-hero-cta);
     text-align: center;
@@ -593,11 +476,7 @@ footer li{
 .product-info-content>*{
     flex: 1;
 }
-@media (max-width: 880px){
-    .product-info-content{
-        flex-direction: column;
-    }
-}
+
 .product-info-content-right{
     text-align: left;
 }
