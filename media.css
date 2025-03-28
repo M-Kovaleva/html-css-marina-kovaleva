@@ -71,7 +71,7 @@
 
   }
 
-@media (min-width: 1350px) {
+/*@media (min-width: 1350px) {
     .shop .categories{
         flex-direction: row;
     }
@@ -99,14 +99,16 @@
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
+}
+@media (min-width: 980px) {
     .categories-shop .ctg-shop{
-        width: 600px;
+        width: 900px;
         position: relative;
     }
     .ctg-shop .button{
         position: absolute;
         top: 85%;
-        left: 30%;
+        left: 35%;
         width: 15rem;
         background-color: var(--color-hero-cta);
         opacity: 73%;
