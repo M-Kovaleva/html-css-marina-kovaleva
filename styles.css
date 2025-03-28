@@ -486,13 +486,19 @@ footer li{
     padding-right: 0;
 }
 .product-info-content-right .cta-pay{
+    font: var(--text-paragraph), serif, monospace;
+    font-weight: var(--text-weight-paragraph);
+    font-size: var(--text-size-paragraph);
+    border: none;
     background-color: var(--color-cta-button);
     color: var(--color-hero-cta);
     text-align: center;
     border-radius: var(--img-border-radius);
     padding: 0.75rem 4.25rem;
     width: 15rem;
+    margin-bottom: 3rem;
     margin-bottom: 2rem;
+    margin-left: 0;
 }
 
 /* Shopping cart */
@@ -626,7 +632,7 @@ input{
       margin-left: 2rem;
       margin-right: 2rem;
   }
-  .container .cta-pay{
+  .contact-container .cta-pay{
     font: var(--text-paragraph), serif, monospace;
     font-weight: var(--text-weight-paragraph);
     font-size: var(--text-size-paragraph);
