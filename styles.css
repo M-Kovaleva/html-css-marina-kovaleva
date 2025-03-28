@@ -1,36 +1,37 @@
+@import "variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family: "Hind Madurai", serif, monospace;
-    font-weight: 400;
-    font-size: 1.25rem;
+    font-family: var(--text-paragraph), serif, monospace;
+    font-weight: var(--text-weight-paragraph);
+    font-size: var(--text-size-paragraph);
     font-style: normal;
-    color: #1F3D47;
+    color: var(--color-body-paragraph);
     line-height: 1.6;
     text-align: left;
 }
 .page-wrapper{
-    background-color: #FFF;
+    background-color: var(--color-hero-cta);
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 .page-header{
-    background-color: #FFF;
+    background-color: var(--color-hero-cta);
 }    
 
 .page-main{
-    background-color: #FFF;
+    background-color: var(--color-hero-cta);
     flex-grow: 1;
 }
 .page-footer{
-    background-color:#FFF;
+    background-color: var(--color-hero-cta);
 }
 .container{
-    background-color:#245654;
+    background-color: var(--color-header-footer);
     height: 100%;
     max-width: 120rem;
     display: flex;
@@ -43,34 +44,34 @@ body{
     background-color:#F6EFD7;}
 
 h1{
-    font-family: 'Montserrat', sans-serif, serif, monospace;
+    font-family: var(--text-header), sans-serif, serif, monospace;
     font-weight: 800;
     font-size: 3rem;
-    color: #245654;
+    color: var(--color-header-footer);
     line-height: 1.1;
     text-align: center;
     margin: 0;
 }
 h2{
-    font-family: 'Montserrat', sans-serif, serif, monospace;
+    font-family: var(--text-header), sans-serif, serif, monospace;
     font-weight: 700;
     font-size: 2.25rem;
-    color: #245654;
+    color: var(--color-header-footer);
     margin: 0;
 }
 h3{
-    font-family: 'Montserrat', sans-serif, serif, monospace;
+    font-family: var(--text-header), sans-serif, serif, monospace;
     font-weight: 600;
     font-size: 1.5rem;
-    color: #1F3D47;
+    color: var(--color-body-paragraph);
     margin: 1rem auto;
 }
 a{
     text-decoration: none;
-    color: #1F3D47;
+    color: var(--color-body-paragraph);
 }
 img{
-    border-radius: 1.25rem;  
+    border-radius: var(--img-border-radius);  
 }
 p{
     margin: 1rem auto;
@@ -84,17 +85,17 @@ p{
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
-.fa-solid{
-    color: #FFF;
+.fa-solid, .fa-brands{
+    color: var(--color-hero-cta);
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
 
 .cta-button{
-    background-color: #F14B4B;
-    color: #FFF;
+    background-color: var(--color-cta-button);
+    color: var(--color-hero-cta);
     text-align: center;
-    border-radius: 1.25rem;
+    border-radius: var(--img-border-radius);
     padding: 0.75rem 4.25rem;
 }
 ul{
@@ -118,11 +119,11 @@ ul{
    
   }
 .nav-page a{
-    font-family: "Hind Madurai", serif, monospace;
-    font-weight: 400;
-    font-size: 1.25rem;
+    font-family: var(--text-paragraph), serif, monospace;
+    font-weight: var(--text-weight-paragraph);
+    font-size: var(--text-size-paragraph);
     font-style: normal;
-    color: #1F3D47;
+    color: var(--color-body-paragraph);
 }
 
 .nav-page a:hover {
@@ -161,7 +162,7 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #FFF;
+    color: var(--color-hero-cta);
     margin-top: 2rem;
 }
 .ham-icon{
@@ -228,12 +229,12 @@ ul{
     margin-left: 3.5rem;
 }
 .separator-container h2{
-    color: #FFF;
+    color: var(--color-hero-cta);
     margin-bottom: 0.3rem;
     margin-top: 0rem;
 }
 .separator-container p{
-    color: #FFF;
+    color: var(--color-hero-cta);
     margin-top: 0rem;
     margin-bottom: 1.8rem;
 }
@@ -246,9 +247,9 @@ footer p{
     text-align: center;
 }
 footer a{
-    font-weight: 400;
+    font-weight: var(--text-weight-paragraph);
     text-decoration: none;
-    color: #FFF;
+    color: var(--color-hero-cta);
 }
 footer a:hover{
     text-decoration: underline;
@@ -263,7 +264,7 @@ footer li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #FFF;
+    color: var(--color-hero-cta);
 }
 @media (max-width: 800px) {
     .footer-container {
@@ -287,7 +288,7 @@ footer li{
     margin-right: 1.2rem;
 }
 .under-container{
-    font-weight: 400;
+    font-weight: var(--text-weight-paragraph);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -299,16 +300,13 @@ footer li{
         align-items: center;
     }
   }
-hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
-} 
+
 .under-item{
     margin-bottom: 1.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
-.payment-icons a{
+.payment-icons i{
     margin-left: 1.2rem;
     margin-right: 1.2rem
 
@@ -341,7 +339,7 @@ hr{
     margin: 2.4rem;
 }
 .hero-home h1{
-    color: #FFF;
+    color: var(--color-hero-cta);
     margin: 0px;
 }
 .section-name{
@@ -385,12 +383,12 @@ hr{
     top: 75%;
     left: 25%;
     width: 10rem;
-    background-color: #FFF;
+    background-color: var(--color-hero-cta);
     opacity: 73%;
     text-decoration: none;
     text-align: center;
-    color: #1F3D47;
-    border-radius: 1.25rem;
+    color: var(--color-body-paragraph);
+    border-radius: var(--img-border-radius);
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
@@ -404,12 +402,12 @@ hr{
         top: 85%;
         left: 25%;
         width: 15rem;
-        background-color: #FFF;
+        background-color: var(--color-hero-cta);
         opacity: 73%;
         text-decoration: none;
         text-align: center;
-        color: #1F3D47;
-        border-radius: 1.25rem;
+        color: var(--color-body-paragraph);
+        border-radius: var(--img-border-radius);
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
@@ -446,12 +444,12 @@ hr{
     top: 65%;
     left: 25%;
     width: 10rem;
-    background-color: #FFF;
+    background-color: var(--color-hero-cta);
     opacity: 73%;
     text-decoration: none;
     text-align: center;
-    color: #1F3D47;
-    border-radius: 1.25rem;
+    color: var(--color-body-paragraph);
+    border-radius: var(--img-border-radius);
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
@@ -465,48 +463,16 @@ hr{
         top: 85%;
         left: 35%;
         width: 15rem;
-        background-color: #FFF;
+        background-color: var(--color-hero-cta);
         opacity: 73%;
         text-decoration: none;
         text-align: center;
-        color: #1F3D47;
-        border-radius: 1.25rem;
+        color: var(--color-body-paragraph);
+        border-radius: var(--img-border-radius);
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
 }   
-/*.categories-shop{
-    display: inline-flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 1.2rem;
-
-}
-.ctg-shop{
-    width: 690px;
-    height: 592px;
-    flex: 1;
-    position: relative;
-}
-.ctg-shop img{
-    width: 100%;
-    height: auto;
-}
-.ctg-shop .button{
-    position: absolute;
-    top: 85%;
-    left: 35%;
-    width: 15rem;
-    background-color: #FFF;
-    opacity: 73%;
-    text-decoration: none;
-    text-align: center;
-    color: #1F3D47;
-    border-radius: 1.25rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
-*/
 /* All jackets page */
 .hero-shop {
     background-image: url('Images/Men-ski.jpg');
@@ -527,7 +493,7 @@ hr{
     }
   }
 .hero-shop h1{
-    color: #FFF;
+    color: var(--color-hero-cta);
     text-align: center;
     margin: 0px;
     padding-top: 35vh;
@@ -647,10 +613,10 @@ hr{
     padding-right: 0;
 }
 .product-info-content-right .cta-pay{
-    background-color: #F14B4B;
-    color: #FFF;
+    background-color: var(--color-cta-button);
+    color: var(--color-hero-cta);
     text-align: center;
-    border-radius: 1.25rem;
+    border-radius: var(--img-border-radius);
     padding: 0.75rem 4.25rem;
     width: 15rem;
     margin-bottom: 2rem;
@@ -671,7 +637,7 @@ select{
 }
 
 .price{
-    color: #F14B4B;
+    color: var(--color-cta-button);
 }
 /* Also like */
 .also-container{
@@ -722,11 +688,11 @@ select{
 .checkout-info-content-right{
     display: flex;
     flex-direction: column;
-    border: 1px solid #1F3D47;
+    border: 1px solid var(--color-body-paragraph);
 }
 input{
     display: block;
-    border: 1px solid #1F3D47;
+    border: 1px solid var(--color-body-paragraph);
 }
 .checkout-info-content input{
     
@@ -748,7 +714,7 @@ input{
 
 /* Contact page */
 .contact-form input{
-  border: 1px solid #1F3D47;
+  border: 1px solid var(--color-body-paragraph);
   margin: 10px 10px 10px 0px;
   padding: 10px;
   
@@ -756,7 +722,7 @@ input{
 
 textarea {
   height: 65%;
-  border: 1px solid #1F3D47;
+  border: 1px solid var(--color-body-paragraph);
   margin: 10px 10px 10px 0px;
   padding: 10px;
 }

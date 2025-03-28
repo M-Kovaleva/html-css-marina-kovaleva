@@ -1,0 +1,11 @@
+:root{
+    --text-header: 'Montserrat';
+    --text-paragraph: "Hind Madurai";
+    --text-weight-paragraph: 400;
+    --text-size-paragraph: 1.25rem;
+    --img-border-radius: 1.25rem;
+    --color-body-paragraph: #1F3D47;
+    --color-header-footer: #245654;
+    --color-hero-cta: #FFF;
+    --color-cta-button: #F14B4B;
+}
