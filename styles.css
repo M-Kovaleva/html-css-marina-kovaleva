@@ -315,12 +315,12 @@ footer li{
     .shop .categories-shop{
         flex-direction: column;
     }
-  
+   
 }
 
 .ctg{
     flex: 1;
-    width: 600px;
+    max-width: 600px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -363,7 +363,7 @@ footer li{
 
 .ctg-shop{
     flex: 1;
-    width: 600px;
+    max-width: 900px;
     position: relative;
     display: flex;
     flex-direction: column;
