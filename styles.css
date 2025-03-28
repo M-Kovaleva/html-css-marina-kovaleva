@@ -105,7 +105,7 @@ ul{
 
 /* Navigation on page */
 .nav-page{
-    margin:0 2rem 0 0; 
+    margin:0 ; 
     padding: 3rem;
     display: flex;
     justify-content: space-between;
@@ -135,12 +135,18 @@ ul{
 .header-container{
     display: flex;
     justify-content: space-between;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .header-container-icons{
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
+.header-container-icons .fa-solid{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 
 .menu, 
 #sidebar-active {
@@ -155,14 +161,13 @@ ul{
 .menu a{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     color: var(--color-hero-cta);
     margin-top: 2rem;
 }
 .ham-icon{
     margin-top: 32px;
 }
-
 
 /* Separator */
 .separator-container{
@@ -502,7 +507,7 @@ footer li{
 
 /* Shopping cart */
 .page-name{
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 select{
     width: 60px;
@@ -645,4 +650,26 @@ input{
     margin-bottom: 3rem;
     margin-left: 5rem;
     
+}
+
+/*coming soon page*/
+.coming-container{
+    display: flex;
+    flex-direction: column;
+}
+.cta-section{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+.coming-container h1{
+    margin-top: 3rem;
+}
+.coming-container p{
+    margin-top: 1rem;
+}
+.social-links{
+    margin-top: 3rem;
+}
+.social-links .fa-brands{
+    color: var(--color-body-paragraph);
 }

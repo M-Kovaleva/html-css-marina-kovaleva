@@ -80,7 +80,7 @@
     }
   }
 
-@media (min-width: 1024px) {
+@media (min-width: 650px) {
     .categories .ctg{
         width: 600px;
         position: relative;
@@ -100,13 +100,13 @@
         padding-bottom: 0.75rem;
     }
     .categories-shop .ctg-shop{
-        width: 828px;
+        width: 600px;
         position: relative;
     }
     .ctg-shop .button{
         position: absolute;
         top: 85%;
-        left: 35%;
+        left: 30%;
         width: 15rem;
         background-color: var(--color-hero-cta);
         opacity: 73%;
