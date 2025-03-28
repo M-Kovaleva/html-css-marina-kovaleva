@@ -669,3 +669,20 @@ input{
 .social-links .fa-brands{
     color: var(--color-body-paragraph);
 }
+
+/* Confirm order */
+.confirm-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.confirm-container h1{
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.confirm-container p{
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
