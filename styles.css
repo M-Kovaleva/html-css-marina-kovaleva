@@ -37,7 +37,6 @@ body{
     max-width: 120rem;
     display: flex;
     flex-direction: column;
-
     margin: 0 auto;
 
 }
@@ -593,38 +592,57 @@ input{
 
 /* Contact page */
 .contact-form input{
-  border: 1px solid var(--color-body-paragraph);
-  margin: 10px 10px 10px 0px;
-  padding: 10px;
+    border: 1px solid #1F3D47;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    
+  }
   
-}
+  textarea {
+    height: 65%;
+    border: 1px solid #1F3D47;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+  }
+  
+  .contact-form{
+    display: flex;
+    text-align: left;
+    margin: 3rem 3rem 3rem 3rem;
+  }
+  @media (max-width: 1150px){
+    .contact-form{
+        flex-direction: column;
+    }
+  }
 
-textarea {
-  height: 65%;
-  border: 1px solid var(--color-body-paragraph);
-  margin: 10px 10px 10px 0px;
-  padding: 10px;
-}
-
-.contact-form{
-  display: flex;
-  text-align: left;
-}
-
-.contact-form > * {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-input.cta-button{
+  
+  .contact-form > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .contact-info{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .contact-message{
+      margin-left: 2rem;
+      margin-right: 2rem;
+  }
+  .container .cta-pay{
+    font: var(--text-paragraph), serif, monospace;
+    font-weight: var(--text-weight-paragraph);
+    font-size: var(--text-size-paragraph);
     border: none;
-    margin-left: 56px;
-}
-.contact-info{
-    margin-left: 56px;
-    margin-right: 10px;
-}
-.contact-message{
-    margin-right: 56px;
-    margin-left: 10px;
+    background-color: var(--color-cta-button);
+    color: var(--color-hero-cta);
+    text-align: center;
+    border-radius: var(--img-border-radius);
+    padding: 0.75rem 4.25rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    
 }
