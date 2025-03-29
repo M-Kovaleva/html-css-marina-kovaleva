@@ -127,9 +127,7 @@ ul{
 .nav-page .active{
     text-decoration: underline;
 }
-.payment .active{
-    text-decoration: underline;
-}
+
 
   /* Header */
 .header-container{
@@ -511,9 +509,7 @@ select{
     font-weight: 200;
     font-size: 1rem;
 }
-.product-info-content-right form{
-    margin-bottom: 3rem;
-}
+
 
 .price{
     color: var(--color-cta-button);
@@ -535,6 +531,8 @@ select{
     opacity: 30%;
 }
 /* Check out page */
+
+
 .checkout-info{
     margin: 0 3rem 3rem 3rem;
 }
@@ -542,19 +540,27 @@ select{
 .checkout-info-content img{
     max-width: 15rem;
     max-height: 15.5rem;
-    margin: 1rem 0 0 1rem;
+    margin-top: 1rem;
+    max-width: 200px;
+    height: 200px;
+    
 }
 .checkout-info-content-right .product-info-content-right{
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin: 1rem 1rem 0 1rem;
+    margin: 0 2rem 0 2rem;
 }
 .checkout-info-content-right .product-info-content-right>*{
     flex: 1;
 }
+@media (max-width:680px){
+    .checkout-info-content-right .product-info-content-right{
+        flex-direction: column;
+    }
+}
 .checkout-info-content{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
      gap: 4rem;
@@ -567,29 +573,71 @@ select{
 .checkout-info-content-right{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     border: 1px solid var(--color-body-paragraph);
+    border-radius: 1.25rem;
+    background-color: var(--color-hero-cta);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 input{
     display: block;
     border: 1px solid var(--color-body-paragraph);
 }
+.checkout-info-content form{
+    margin-left: 1rem;
+}
+   
 .checkout-info-content input{
+    border: 1px solid #1F3D47;
+
+    padding: 10px;
+}     
+    
+        
+      
+
+.checkout-info-content .cta-pay{
+    font: var(--text-paragraph), serif, monospace;
+    font-weight: var(--text-weight-paragraph);
+    font-size: var(--text-size-paragraph);
+    border: none;
+    background-color: var(--color-cta-button);
+    color: var(--color-hero-cta);
+    text-align: center;
+    border-radius: var(--img-border-radius);
+    padding: 0.75rem 4.25rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+
     
 }
 .contact-info-right img{
     max-width: 10rem;
 }
 .order-total{
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    flex: 1;
+    
 }
 .order{
     display: flex;
-    gap: 8rem;
-    flex-direction: row;
+    gap: 1rem;
+    flex-direction: column;
     margin-left: 2rem;
+    margin-right: 2rem;
 }
-
+fieldset{
+    border: none;
+}
+.payment fieldset{
+    display: flex;
+    flex-direction: column;
+}
+.payment .pay-method{
+    display: inline;
+}
 
 /* Contact page */
 .contact-form input{
@@ -602,7 +650,7 @@ input{
   textarea {
     height: 65%;
     border: 1px solid #1F3D47;
-    margin: 10px 10px 10px 0px;
+    margin: 10px 0 10px 0px;
     padding: 10px;
   }
   
