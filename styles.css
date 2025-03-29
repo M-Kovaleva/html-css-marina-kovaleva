@@ -135,9 +135,6 @@ textarea {
 .header-container-icons{
     margin: 2rem 0 2rem 0;
 }
-.header-container-icons .fa-solid{
-    margin: 0 0.5rem 0 0.5rem;
-}
 .menu, 
 #sidebar-active {
     display: none;
@@ -155,7 +152,7 @@ textarea {
     margin-top: 2rem;
 }
 .ham-icon{
-    margin-top: 32px;
+    margin-top: 2rem;
 }
 
 /* Separator */
