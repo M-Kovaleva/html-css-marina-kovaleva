@@ -510,10 +510,14 @@ select{
     font-size: 1rem;
 }
 
-
 .price{
     color: var(--color-cta-button);
 }
+.shop-cart{
+    margin: 2rem 0 3rem 0;
+}
+
+
 /* Also like */
 .also-container{
     display: inline-flex;
