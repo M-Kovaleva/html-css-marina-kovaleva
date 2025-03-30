@@ -100,8 +100,9 @@ textarea {
     float: left;
     max-width: 8rem;
     max-height: 4.8rem;
-    padding: 1rem 1rem 1rem 1.2rem;
+    padding: 1rem 0;
 }
+
 .fa-solid, 
 .fa-brands{
     color: var(--color-hero-cta);
@@ -193,6 +194,9 @@ footer li{
 .under-item{
     margin: 0 2rem 1.5rem 2rem;
 }
+.under-item p{
+    color: var(--color-hero-cta);
+}
 .payment-icons i{
     margin: 0 1.2rem 0 1.2rem ;
 }
@@ -241,12 +245,19 @@ footer li{
     padding-left: 0;
     padding-right: 0;
 }
-
+.product-info-specific{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 /* Shopping cart */
 
 .page-name{
     margin-bottom: 4rem;
 }
+.product-total{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}  
 .price{
     color: var(--color-cta-button);
 }
