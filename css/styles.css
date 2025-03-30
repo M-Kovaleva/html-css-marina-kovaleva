@@ -234,12 +234,18 @@ footer li{
     padding-left: 0;
     padding-right: 0;
 }
-.product-info-content-right .cta-button{
+ button{
     font: var(--text-paragraph), serif, monospace;
     border: none;
     width:15rem;
     margin-bottom: 2rem;
+    background-color: var(--color-cta-button);
+    color: var(--color-hero-cta);
+    text-align: center;
+    border-radius: var(--img-border-radius);
+    padding: 0.75rem 4.25rem;
 }
+
 
 /* Shopping cart */
 
