@@ -56,12 +56,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .hero-home {
-        background-image: url('../Images/Hiking-in-the-Rain-Quotes:mobile.jpg');
-      }
-    .hero-shop {
-        background-image: url('../Images/Men-ski-mobile.jpg');
-      }
+   
   }
 
 @media (max-width: 800px) {
