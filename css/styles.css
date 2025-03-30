@@ -237,7 +237,7 @@ footer li{
 }
 .product-info-content-right input{
     display: inline;
-    width: 2rem;
+    width: 1rem;
 }
 .product-info-content-right fieldset{
     border: none;
@@ -283,8 +283,6 @@ footer li{
 }
 
 /* Check out page */
-
-
 .checkout-info-content img{
     margin-top: 1rem;
     max-width: 12.5rem;
@@ -329,6 +327,9 @@ footer li{
 }
 .order-total{
     flex: 1;
+}
+.price-total{
+    margin-bottom: 1rem;
 }
 .order{
     display: flex;
