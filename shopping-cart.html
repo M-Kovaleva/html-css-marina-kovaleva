@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Rainydays website shopping cart page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainy Days | Shopping-cart</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -49,10 +50,12 @@
                     <div class="product-info-content">
                         <img src="Images/Woman-blue-waterproof-jacket_cart.jpg" alt="Woman in blue waterproof jacket" />
                         <div class="product-info-content-right">
-                            <h2 tabindex="0">Waterproof jacket</h2>
-                            <h3 tabindex="0">200 $</h3>
-                            <p tabindex="0">Size:</p>
-                            <form method="post">
+                            <div>
+                                <h2 tabindex="0">Waterproof jacket</h2>
+                                <h3 tabindex="0">200 $</h3>
+                                <p tabindex="0">Size:</p>
+                            </div>
+                            <form>
                                 <select name="quantity">
                                 <option value="one">1</option>
                                 <option value="two">2</option>
@@ -61,9 +64,9 @@
                             </form>
                             <div class="order-total">
                                 <h2 class="shop-cart" tabindex="0">Order total:</h2>
-                                <h2 class="shop-cart" tabindex="0">200 $</h2>
-                                <a href="checkout.html" class="cta-button">To checkout</a>
-                            </div>   
+                                <h2 class="price" tabindex="0">200 $</h2>
+                            </div>
+                            <a href="checkout.html" class="cta-button">To checkout</a>   
                         </div>  
                     </div>
                 </section>
