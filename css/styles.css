@@ -312,12 +312,7 @@ footer li{
     border: 1px solid var(--color-body-paragraph);
     padding: 10px;
 }       
-.checkout-info-content .cta-button{
-    font-size: var(--text-size-paragraph);
-    border: none;
-    padding: 0.75rem 4.25rem;
-    margin: 0 3rem 0 0;
-}
+
 .contact-info-right img{
     max-width: 10rem;
 }

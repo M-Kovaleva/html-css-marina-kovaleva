@@ -22,10 +22,3 @@
   .contact-message{
     margin: 0 2rem 0 2rem;
   }
-  .contact-container .cta-button{
-    font-size: var(--text-size-paragraph);
-    border: none;
-    padding: 0.75rem 4.25rem;
-    width: 15rem;
-    margin-left: 2rem;
-}
