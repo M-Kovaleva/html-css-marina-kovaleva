@@ -1,0 +1,139 @@
+/*desktop*/
+ 
+@media (max-width: 500px){
+    body{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .nav-page a{
+        font-size: 1rem;
+    }
+    .logo_image{
+        max-width: 4rem;
+        max-height: auto;
+    }
+    .button{
+        width:10rem
+    }
+    .ctg-shop .button{
+        top: 75%;
+    }
+}
+
+@media (max-width: 1150px){
+    .contact-form{
+        flex-direction: column;
+    }
+  }
+
+@media (max-width: 680px) {
+    .nav-page{
+        flex-direction: column;
+        gap: 1.2rem
+    }    
+    .checkout-info-content-right .product-info-content-right{
+        flex-direction: column;
+    }
+    .product-container{
+        flex-direction: column;
+    }  
+  }
+
+@media (max-width: 600px) {
+    .separator-container {
+      background-image: url('../Images/Man-bicycle-mobile.jpg');
+      min-height: 100vh
+    }
+    .under-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-home {
+        background-image: url('../Images/Hiking-in-the-Rain-Quotes:mobile.jpg');
+      }
+    .hero-shop {
+        background-image: url('../Images/Men-ski-mobile.jpg');
+      }
+  }
+
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+ 
+@media (max-width: 1024px) {
+    .hero-home {
+      background-image: url('../Images/Hiking-in-the-Rain-Quotes-tablet.jpg');
+    }
+    .hero-shop {
+        background-image: url('../Images/Men-ski-tablet.jpg');
+      }
+    .shop .categories{
+        flex-direction: column;
+    }
+   
+    .shop .categories-shop{
+        flex-direction: column;
+    }
+  }
+ 
+@media (max-width: 880px){
+    .product-info-content{
+        flex-direction: column;
+    }
+  }
+
+  /*mobile*/
+@media (min-width: 1150px) {
+    .fa-solid{
+        margin-right: 1.2rem;
+        margin-left: 1.2rem;
+    }    
+    .header-container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .menu {
+        display:block;
+        margin-top: 2rem;
+    }
+    .menu a{
+        display: inline;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .ham-icon{
+        display: none;
+    }
+
+  }
+
+/*horizontal*/ 
+  @media (max-height: 600px) {
+    .separator-container {
+      background-image: url('../Images/Man-bicycle.jpg');
+      min-height: 150vh
+    }
+  }
+
+
+
+  
+
+
+  
+
+
+
+  

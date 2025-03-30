@@ -1,0 +1,39 @@
+.hero-shop {
+    background: url('../Images/Men-ski.jpg') center top no-repeat;
+    background-size: cover;
+    min-height: 70vh
+}
+.hero-shop h1{
+    color: var(--color-hero-cta);
+    text-align: center;
+    margin: 0px;
+    padding-top: 35vh;
+    left: 50%;
+}
+.all-products{
+    margin-bottom: 3rem;
+}
+.products{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 3rem 0 3rem;
+
+}
+.product-item{
+    flex: 1;
+    max-width: 600px;
+}
+.product-item img{
+    width: 100%;
+    height: auto;
+}
+.product-item a :hover{
+    opacity: 30%;
+}

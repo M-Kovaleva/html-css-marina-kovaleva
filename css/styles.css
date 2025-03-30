@@ -1,7 +1,8 @@
-@import "media.css";
-@import "variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+@import "../css/media.css";
+@import "../css/variables.css";
+
 
 body{
     margin: 0;
@@ -96,7 +97,6 @@ textarea {
     max-width: 8rem;
     max-height: 4.8rem;
     padding: 1rem 1rem 1rem 1.2rem;
-  
 }
 .fa-solid, 
 .fa-brands{
@@ -110,21 +110,10 @@ textarea {
     border-radius: var(--img-border-radius);
     padding: 0.75rem 4.25rem;
 }
-
-/* Navigation on page */
-
-.nav-page{
-    padding: 3rem;
+.section-name{
     display: flex;
-    justify-content: space-between;
-}
-.nav-page a:hover {
-    text-decoration: none;
-}
-.nav-page .active{
-    text-decoration: underline;
-}
-
+    margin: 0 3rem 1rem 3rem;
+} 
   /* Header */
 
 .header-container{
@@ -153,34 +142,6 @@ textarea {
 }
 .ham-icon{
     margin-top: 2rem;
-}
-
-/* Separator */
-
-.separator-container{
-    position: relative;
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url('Images/Man-bicycle.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    min-height: 45vh;
-    margin-top: 3rem;
-}
-.separator-item{
-    position: absolute;
-    margin: 2.4rem 0 3.5rem 3.5rem;
-}
-.separator-container h2{
-    color: var(--color-hero-cta);
-    margin-bottom: 0.3rem;
-}
-.separator-container p{
-    color: var(--color-hero-cta);
-    margin-bottom: 1.8rem;
 }
 
 /* Footer */
@@ -231,159 +192,22 @@ footer li{
     margin: 0 1.2rem 0 1.2rem ;
 }
 
-/* Home page */
+/* Navigation on page */
 
-.hero-home{
-    position: relative;
+.nav-page{
+    padding: 3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('Images/Hiking-in-the-Rain-Quotes.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
-    min-height: 110vh
-}
-.hero-home-item{
-    margin: 2.4rem;
-}
-.hero-home h1{
-    color: var(--color-hero-cta);
-    margin: 0px;
-}
-.section-name{
-    display: flex;
-    margin: 0 3rem 1rem 3rem;
-}
-.shop{
-    display:flex;
-    flex-direction: column;
-    margin: 3rem 0 3rem 0;
-}
-.categories{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    gap: 1rem;
-    margin: 0 3rem 0 3rem;
 }
-.ctg{
-    flex: 1;
-    max-width: 600px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.ctg img{
-    width: 100%;
-    height: auto;
-}
-.ctg .button{
-    position: absolute;
-    top: 82%;
-}
-.button{
-    background-color: var(--color-hero-cta);
-    opacity: 73%;
+.nav-page a:hover {
     text-decoration: none;
-    text-align: center;
-    color: var(--color-body-paragraph);
-    border-radius: var(--img-border-radius);
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    width: 15rem;
 }
-.categories-shop{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 0 3rem 4rem 3rem;
-}
-.ctg-shop{
-    flex: 1;
-    max-width: 900px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.ctg-shop img{
-    width: 100%;
-    height: auto;
-}
-.ctg-shop .button{
-    position: absolute;
-    top: 84%;
-
+.nav-page .active{
+    text-decoration: underline;
 }
 
-/* All jackets page */
-.hero-shop {
-    background-image: url('Images/Men-ski.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
-    min-height: 70vh
-}
-.hero-shop h1{
-    color: var(--color-hero-cta);
-    text-align: center;
-    margin: 0px;
-    padding-top: 35vh;
-    left: 50%;
-}
-.all-products{
-    margin-bottom: 3rem;
-}
-.products{
-    display:flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
-.product-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 0 3rem 0 3rem;
-
-}
-.product-item{
-    flex: 1;
-    max-width: 600px;
-}
-.product-item img{
-    width: 100%;
-    height: auto;
-}
-.product-item a :hover{
-    opacity: 30%;
-}
-
-/* About us */
-
-.about{
-    display: flex;
-    flex-direction: column;
-}
-.cta-section{
-    text-align: center;
-    margin: 3rem 3rem 4rem 3rem;
-}
-.cta-section h2{
-    margin-bottom: 3rem;
-}
-.about-content{
-    margin: 3rem 3rem 0 3rem;
-}
 
 /* Product card*/
-
 .product-info{
     margin: 0 3rem 3rem 3rem;
 }
@@ -523,41 +347,7 @@ fieldset{
     display: inline;
 }
 
-/* Contact page */
-
-.contact-container{
-    margin: 0 3rem 4rem 3rem;
-}
-.contact-form input{
-    border: 1px solid #1F3D47;
-    margin: 10px 10px 10px 0px;
-    padding: 10px;
-  }
-  .contact-form{
-    display: flex;
-    text-align: left;
-    margin: 3rem 0 3rem 0 ;
-  }
-  .contact-form > * {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-info{
-    margin: 0 2rem 0 2rem;
-  }
-  .contact-message{
-    margin: 0 2rem 0 2rem;
-  }
-  .contact-container .cta-button{
-    font-size: var(--text-size-paragraph);
-    border: none;
-    padding: 0.75rem 4.25rem;
-    width: 15rem;
-    margin-left: 2rem;
-}
-
-/*coming soon page*/
+/*Coming soon page*/
 
 .coming-container{
     display: flex;

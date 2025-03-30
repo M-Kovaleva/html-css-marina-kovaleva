@@ -1,0 +1,107 @@
+.hero-home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../Images/Hiking-in-the-Rain-Quotes.jpg') center top no-repeat;
+    background-size: cover;
+    min-height: 110vh
+}
+.hero-home-item{
+    margin: 2.4rem;
+}
+.hero-home h1{
+    color: var(--color-hero-cta);
+    margin: 0px;
+}
+
+.shop{
+    display:flex;
+    flex-direction: column;
+    margin: 3rem 0 3rem 0;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 3rem 0 3rem;
+}
+.ctg{
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ctg img{
+    width: var(--img-width-ctg);
+    height: auto;
+}
+.ctg .button{
+    position: absolute;
+    top: 82%;
+}
+.button{
+    background-color: var(--color-hero-cta);
+    opacity: 73%;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-body-paragraph);
+    border-radius: var(--img-border-radius);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    width: 15rem;
+}
+.categories-shop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 3rem 4rem 3rem;
+}
+.ctg-shop{
+    flex: 1;
+    max-width: 900px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ctg-shop img{
+    width: var(--img-width-ctg);
+    height: auto;
+}
+.ctg-shop .button{
+    position: absolute;
+    top: 84%;
+
+}
+
+.separator-container{
+    position: relative;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../Images/Man-bicycle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    min-height: 45vh;
+    margin-top: 3rem;
+}
+.separator-item{
+    position: absolute;
+    margin: 2.4rem 0 3.5rem 3.5rem;
+}
+.separator-container h2{
+    color: var(--color-hero-cta);
+    margin-bottom: 0.3rem;
+}
+.separator-container p{
+    color: var(--color-hero-cta);
+    margin-bottom: 1.8rem;
+}
