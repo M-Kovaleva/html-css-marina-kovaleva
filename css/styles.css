@@ -19,10 +19,13 @@ body{
     background-color: var(--color-hero-cta);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 .page-header{
     background-color: var(--color-hero-cta);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }    
 .page-main{
     background-color: var(--color-hero-cta);
@@ -130,13 +133,6 @@ textarea {
 .header-container-icons{
     margin: 2rem 0 2rem 0;
 }
-.menu, 
-#sidebar-active {
-    display: none;
-}
-#sidebar-active:checked ~ .menu {
-    display: block;
-}
 .menu{
     margin-top: 4rem;
 }
@@ -147,9 +143,91 @@ textarea {
     margin-top: 2rem;
 }
 .ham-icon{
-    margin-top: 2rem;
+    font-size: var(--text-size-paragraph);
+    background-color: var(--color-header-footer);
+    border: none;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: var(--color-header-footer);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding-top: 3rem;
 }
 
+.mobile-menu-content a {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--color-hero-cta);
+    font-size: var(--text-size-paragraph);
+}
+.menu-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: var(--text-size-paragraph);
+    color: var(--color-hero-cta);
+    cursor: pointer;
+}
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.mobile-menu.active {
+    left: 0;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+@media (min-width: 1150px) {
+
+    /* скрываем бургер и overlay */
+    .ham-icon,
+    .menu-overlay,
+    .menu-close  {
+        display: none;
+    }
+
+    /* превращаем mobile-menu в обычный контейнер */
+    .mobile-menu {
+        position: static;
+        height: auto;
+        width: auto;
+        max-width: none;
+        padding: 0;
+        left: 0;
+        background: transparent;
+        transition: none;
+    }
+
+    /* меню в одну строку */
+    .mobile-menu-content {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .mobile-menu-content a {
+        padding: 0;
+        font-size: 1.2rem;
+        color: var(--color-hero-cta);
+    }
+}
 /* Footer */
 
 footer p{

@@ -19,6 +19,7 @@
     .logo_image{
         max-width: 4rem;
         max-height: auto;
+        padding: 2rem 0;
     }
     .button{
         width:10rem
@@ -26,6 +27,16 @@
     .ctg-shop .button{
         top: 75%;
     }
+    .mobile-menu-content a {
+        font-size: 1rem;
+    }
+    .menu-close {
+    font-size: 1rem;
+    }
+    .ham-icon{
+    font-size: 1rem;
+    }    
+
 }
 
 @media (max-width: 1150px){
