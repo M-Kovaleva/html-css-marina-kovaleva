@@ -193,41 +193,7 @@ textarea {
     opacity: 1;
     pointer-events: all;
 }
-@media (min-width: 1150px) {
 
-    /* скрываем бургер и overlay */
-    .ham-icon,
-    .menu-overlay,
-    .menu-close  {
-        display: none;
-    }
-
-    /* превращаем mobile-menu в обычный контейнер */
-    .mobile-menu {
-        position: static;
-        height: auto;
-        width: auto;
-        max-width: none;
-        padding: 0;
-        left: 0;
-        background: transparent;
-        transition: none;
-    }
-
-    /* меню в одну строку */
-    .mobile-menu-content {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .mobile-menu-content a {
-        padding: 0;
-        font-size: 1.2rem;
-        color: var(--color-hero-cta);
-    }
-}
 /* Footer */
 
 footer p{
@@ -280,7 +246,6 @@ footer li{
 }
 
 /* Navigation on page */
-
 .nav-page{
     padding: 3rem;
     display: flex;
@@ -292,7 +257,6 @@ footer li{
 .nav-page .active{
     text-decoration: underline;
 }
-
 
 /* Product card*/
 .product-info{

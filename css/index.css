@@ -93,14 +93,7 @@
     min-height: 45vh;
     margin-top: 3rem;
 }
-@media(max-width: 500px){
-    .separator-container{
-        align-items: center;
-    }
-    .separator-item{
-        text-align: center;
-    }
-}
+
 .separator-item{
     position: absolute;
     margin: 2.4rem 3rem 3.5rem 3rem;

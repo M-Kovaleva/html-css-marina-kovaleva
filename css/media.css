@@ -31,13 +31,21 @@
         font-size: 1rem;
     }
     .menu-close {
-    font-size: 1rem;
+        font-size: 1rem;
     }
     .ham-icon{
-    font-size: 1rem;
+        font-size: 1rem;
+    }
+
+    .separator-container{
+        align-items: center;
+    }
+    .separator-item{
+        text-align: center;
     }    
 
 }
+
 
 @media (max-width: 1150px){
     .contact-form{
@@ -79,7 +87,7 @@
  
 @media (max-width: 1024px) {
     .hero-home {
-      background-image: url('../Images/Hiking-in-the-Rain-Quotes-tablet.jpg');
+        background-image: url('../Images/Hiking-in-the-Rain-Quotes-tablet.jpg');
     }
     .hero-shop {
         background-image: url('../Images/Men-ski-tablet.jpg');
@@ -119,10 +127,36 @@
         margin-left: 1.2rem;
         margin-right: 1.2rem;
     }
-    .ham-icon{
+    
+    .ham-icon,
+    .menu-overlay,
+    .menu-close  {
         display: none;
     }
 
+    .mobile-menu {
+        position: static;
+        height: auto;
+        width: auto;
+        max-width: none;
+        padding: 0;
+        left: 0;
+        background: transparent;
+        transition: none;
+    }
+
+    .mobile-menu-content {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .mobile-menu-content a {
+        padding: 0;
+        font-size: 1.2rem;
+        color: var(--color-hero-cta);
+    }
   }
 
 /*horizontal*/ 
