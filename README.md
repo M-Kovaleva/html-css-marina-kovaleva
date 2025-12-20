@@ -1,33 +1,79 @@
-# HTML & CSS Course Assignment
+# Project Title
+☔ Rainy Days - online store selling raincoats for men and women.
+## Screenshot
+![Project Screenshot](./Images/project-screenshot.png)
 
-## Brief
+Rainy Days - online store selling raincoats for men and women. They are designed for a variety of outdoor activities that enrich people's lives.
 
-You must deliver a properly functioning, responsive website for the assignment brief you chose in Design 1.
+Figma design: [https://www.figma.com/design/r1IhYI7PkWpPwkyvhe6MG3/2025-02-15_design_ca_Marina-Kovaleva_fp?node-id=0-1&p=f&t=zRXKNjTgGE4soQ4P-0](https://www.figma.com/design/r1IhYI7PkWpPwkyvhe6MG3/2025-02-15_design_ca_Marina-Kovaleva_fp?node-id=0-1&p=f&t=zRXKNjTgGE4soQ4P-0)
 
-The site needs to have every page listed in the site architecture on your chosen brief. Certain functionality requiring JavaScript can be mimicked; for example, a login page could link across from the ‘Sign in’ button.
+## Description
+RainyDays is a simulated e-commerce web application focused on outdoor appare. 
+They are designed for a range of different outdoor activities that enrich people's lives.
+Slogan: Pushing the Comfort Zone.
+Target audience: Men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing. 
+Unique selling points: The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types ensuring customers are comfortable whatever adventure they go on.
 
-- The HTML should be semantic and neat.
-- The CSS should follow the DRY principle and be easy to read.
-- The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. Please do not use a CSS framework like Bootstrap; we want to see that you can build responsive sites without the help of a framework.
-- The site should be WCAG compliant, and accessibility should be taken into account.
-- Each page should have a unique <meta name="description">, <title>, and <h1>.
-- You should not use copied code in your submission. All code submitted must be written by yourself. You may use external sources to show you how to achieve specific effects, which should be included in your report.
+ It is a responsive web site developed using HTML, CSS, JS including:
+- Home page with 
+   - bright, attractive design;
+   - two section with categoris of products( by gender, by season);
+   - separator with cta-button;
+- All products page
+   - list ofe all products with titles and prices;
+- All exhibitions page with
+   - list of all permanet exhibitions with descriptions;
+   - section with museum news;
+- Specific product page
+   - description
+   - photos of product
+   - size selector
+   - "Add to cart" button
+   - section with few popular products
+- Cart page
+    - product in the cart and the total price;
+    - quantity selector
+    - button to proceed to checkout;
+    - section with few popular products
+- Checkout page with
+    - form with various payment methods
+    - contact information form
+    - list of products in the cart and the total price;
+    - "Pay order" button which redirect to Success page and clear cart
+- Success page with
+    - message of confirmation of order placement 
 
-## Process
+---
 
-1. Look at your prototype and consider how the elements will move across the different devices. Which elements move where on different devices?
-2. Write your HTML and CSS, ensuring your HTML is semantic and bug-free and your CSS follows DRY principles.
-3. Use media queries, flex or grid to make your website responsive across screen sizes.
-4. Test your website using your developer tools and also test on major browsers and various devices.
-5. Validate your code using the Markup Validation Service
-6. Use the WAVE Web Accessibility Evaluation Tools to test that your site matches best practices for accessibility
-7. When your site is ready, post it on the Teams peer review channel.
-8. Look at the work of your peers and write a review for them.
-9. Make adjustments based on the feedback you gather from peers and teachers.
-10. Submit here on Teams.
+## Built With
+List the main tools and technologies used in this project:
 
-## Delivery
+- HTML
+- CSS
+- JS
+---
 
-- Please include a link to your live site, deployed on Netlify or GitHub Pages in your submission.
-- Please include a link to your public GitHub repo containing your code in your submission.
-- There is no reflection for this CA.
+## Installation
+
+Follow these steps to get a copy of the project running locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/M-Kovaleva/html-css-marina-kovaleva
+   ```
+
+2. Open the repository:
+   ```bash
+   cd your-repo-name
+   ```
+3. Run Live Server
+
+Link to deployed web application: https://m-kovaleva.github.io/html-css-marina-kovaleva/
+
+## License
+
+MIT License
+
+## Contact
+Marina Kovaleva - owlet.savvina@gmail.com
+Project Link: [https://github.com/M-Kovaleva/html-css-marina-kovaleva](https://github.com/M-Kovaleva/html-css-marina-kovaleva)
